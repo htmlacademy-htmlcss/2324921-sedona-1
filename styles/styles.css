@@ -1,6 +1,4 @@
-body{
-  background-color: tomato;
-}
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -33,16 +31,23 @@ body{
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
-  font-display: swap;
-}
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
+  /* по умолчанию размер текста поставил 22/26px. Верно ли? */
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000
+  background: #FFF;
+}
+page-header{
+  color: #000000;
+  background: #FFF;
+}
+navigation-link{
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
   line-height: 24px;
+
+
 
 }
