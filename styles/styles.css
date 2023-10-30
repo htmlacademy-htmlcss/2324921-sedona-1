@@ -124,7 +124,29 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
+.subscription{
+  background-image: url("../images/catalog/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.subscription-title{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 120% */
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
 
+}
+.subscription-description{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-align: center;
+}
 .page-footer{
   font-size: 14px;
   color: #000000;
@@ -144,6 +166,8 @@ body {
   text-transform: uppercase;
  color:  #000000;
 }
-.page-footer .htmlacademy.ru{
+.webdeveloper-wrapper  {
+
+
 
 }
