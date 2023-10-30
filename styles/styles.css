@@ -39,6 +39,19 @@ body {
   color: #000000
   background-color: #FFF;
 }
+.button{
+  font-family: inherit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+color: #FFFFFF;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
 .page-header{
   color: #000000;
   background-color: #FFF;
@@ -125,6 +138,7 @@ body {
   text-transform: uppercase;
 }
 .subscription{
+  font-family: "PT Sans", sans-serif;
   background-image: url("../images/catalog/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -133,7 +147,7 @@ body {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px; /* 120% */
+  line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: center;
@@ -147,6 +161,7 @@ body {
   color: #FFFFFF;
   text-align: center;
 }
+
 .page-footer{
   font-size: 14px;
   color: #000000;
