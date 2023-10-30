@@ -158,7 +158,7 @@ body {
 
 }
 .footer-contacts-address-phone{
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif; /* шрифт не совпадает со шрифтом из макета*/
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
