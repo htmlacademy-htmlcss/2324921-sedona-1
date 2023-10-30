@@ -36,7 +36,7 @@ body {
   /* по умолчанию взял размер текста и поставил 22/26px. Верно ли? */
   font-size: 22px;
   line-height: 26px;
-  color: #000000
+  color: #000000 ;
   background-color: #FFF;
 }
 .button{
@@ -78,7 +78,7 @@ color: #FFFFFF;
   text-transform: capitalize;
   text-decoration: none;
 }
-.main-index{
+.main-title{
   background-image:url("../images/catalog/mainphoto.jpg") ;
   color: #000000;
   background-color: #FFF;
