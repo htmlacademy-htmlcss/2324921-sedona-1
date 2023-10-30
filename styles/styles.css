@@ -33,21 +33,94 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  /* по умолчанию размер текста поставил 22/26px. Верно ли? */
+  /* по умолчанию взял размер текста и поставил 22/26px. Верно ли? */
   font-size: 22px;
   line-height: 26px;
   color: #000000
-  background: #FFF;
+  background-color: #FFF;
 }
-page-header{
+.page-header{
   color: #000000;
-  background: #FFF;
+  background-color: #FFF;
 }
-navigation-link{
+.navigation-link{
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFF;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/*Решил пока оставить такой формат стилей для "navigation-user-link" */
 
+.navigation-user-link{
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFF;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.main-index{
+  background-image:url("../images/catalog/mainphoto.jpg") ;
+  color: #000000;
+  background-color: #FFF;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+/* ниже сделал пока так, чтобы не запутаться,хотя мне не нравится,что повторяются классы
+что-то делаю не так,чувствую)))))*/
+.advantages{
+  text-align: center;
+}
+.advantages-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.advantages-list {
+  text-align: center;
+}
+.advantages-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.infrastructure{
+  text-align: center;
+}
+.infrastructure-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.infrastructure-list{
+  text-align: center;
 
+}
+.infrastructure-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.search{
+  text-align: center;
 
+}
+.search-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
 }
