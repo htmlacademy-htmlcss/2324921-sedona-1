@@ -17,12 +17,12 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  /* по умолчанию взял размер текста и поставил 22/26px. Верно ли? */
   font-size: 22px;
   line-height: 26px;
   color: #000000 ;
   background-color: #FFF;
 }
+
 .button{
   font-family: inherit;
   font-size: 20px;
@@ -34,14 +34,15 @@ color: #FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
-
+  border: none;
 }
+
 .page-header{
   color: #000000;
   background-color: #FFF;
 }
+
 .navigation-link{
-  font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
@@ -50,10 +51,8 @@ color: #FFFFFF;
   text-transform: capitalize;
   text-decoration: none;
 }
-/*Решил пока оставить такой формат стилей для "navigation-user-link" */
 
 .navigation-user-link{
-  font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
@@ -62,6 +61,20 @@ color: #FFFFFF;
   text-transform: capitalize;
   text-decoration: none;
 }
+
+.button-here{
+  /*Шрифт не задавал, т.к. унаследовал от родителя, а, если и добавляю,то никаких изменений не происходит*/
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
 .main-title{
   background-image:url("../images/catalog/mainphoto.jpg") ;
   color: #000000;
@@ -69,64 +82,66 @@ color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-/* ниже сделал пока так, чтобы не запутаться,хотя мне не нравится,что повторяются классы
-что-то делаю не так,чувствую)))))*/
+
 .advantages{
   text-align: center;
 }
+
 .advantages-title{
-  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
+
 .advantages-list {
   text-align: center;
 }
+
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .infrastructure{
   text-align: center;
 }
+
 .infrastructure-title{
-  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
+
 .infrastructure-list{
   text-align: center;
-
 }
+
 .infrastructure-title{
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .search{
   text-align: center;
-
 }
+
 .search-title{
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .subscription{
-  font-family: "PT Sans", sans-serif;
   background-image: url("../images/catalog/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
 .subscription-title{
   font-size: 30px;
   font-style: normal;
@@ -135,8 +150,8 @@ color: #FFFFFF;
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: center;
-
 }
+
 .subscription-description{
   font-size: 22px;
   font-style: normal;
@@ -146,27 +161,35 @@ color: #FFFFFF;
   text-align: center;
 }
 
+.button-search{
+  /*Шрифт не задавал, т.к. унаследовал от родителя*/
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
 .page-footer{
   font-size: 14px;
   color: #000000;
   background-color: #FFF;
-
 }
 
-.footer-social{
-
-}
 .footer-contacts-address-phone{
-  font-family: "PT Sans", sans-serif; /* шрифт не совпадает со шрифтом из макета*/
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
   text-transform: uppercase;
- color:  #000000;
+  color:  #000000;
 }
-.webdeveloper-wrapper  {
 
-
-
+.webdeveloper-logo-link  {
+  width: 115px;
+  height: 33px;
 }
