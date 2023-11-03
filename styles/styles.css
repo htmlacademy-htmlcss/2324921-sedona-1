@@ -1,0 +1,195 @@
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000 ;
+  background-color: #FFF;
+}
+
+.button{
+  font-family: inherit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+color: #FFFFFF;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+}
+
+.page-header{
+  color: #000000;
+  background-color: #FFF;
+}
+
+.navigation-link{
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFF;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.navigation-user-link{
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFF;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.button-here{
+  /*Шрифт не задавал, т.к. унаследовал от родителя, а, если и добавляю,то никаких изменений не происходит*/
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.main-title{
+  background-image:url("../images/catalog/mainphoto.jpg") ;
+  color: #000000;
+  background-color: #FFF;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages{
+  text-align: center;
+}
+
+.advantages-title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.infrastructure{
+  text-align: center;
+}
+
+.infrastructure-title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.infrastructure-list{
+  text-align: center;
+}
+
+.infrastructure-title{
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.search{
+  text-align: center;
+}
+
+.search-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.subscription{
+  background-image: url("../images/catalog/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscription-title{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.subscription-description{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.button-search{
+  /*Шрифт не задавал, т.к. унаследовал от родителя*/
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.page-footer{
+  font-size: 14px;
+  color: #000000;
+  background-color: #FFF;
+}
+
+.footer-contacts-address-phone{
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  color:  #000000;
+}
+
+.webdeveloper-logo-link  {
+  width: 115px;
+  height: 33px;
+}
