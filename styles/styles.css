@@ -15,7 +15,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -41,6 +49,27 @@ color: #FFFFFF;
 .page-header{
   color: #000000;
   background-color: #FFF;
+}
+
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-logo-img{
+  display: block;
+  width: 140px;
+  margin-right: auto;
+}
+.navigation-list{
+  margin:0 0 0 30px;
+  padding: 0;
+  width: 440px;   /*Размер указал с запасом под дополнительный элемент, по умолчанию 339px*/
+}
+
+.navigation-user{
+  max-width: 300px;   /*Размер указал с запасом под дополнительный элемент,по умолчанию 268px */
+  margin:0 20px 0 0;
 }
 
 .navigation-link{
@@ -73,6 +102,10 @@ color: #FFFFFF;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-title{
