@@ -55,9 +55,12 @@ color: #FFFFFF;
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 0 70px;
+  justify-content: space-between;
+  align-items: flex-start
 }
 .navigation-logo-img{
-  display: block;
+
   width: 140px;
   margin-right: auto;
 }
@@ -102,6 +105,14 @@ color: #FFFFFF;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
+  
+  /*Добавил Layout из макета*/
+  display: flex;
+  width: 160px;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .main-container {
