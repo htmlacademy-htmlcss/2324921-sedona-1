@@ -53,6 +53,7 @@ color: #FFFFFF;
 
 .navigation{
   display: flex;
+  width: 1060px; /*Оставил ширину,хотя без нее мне нравится больше!!!!!*/
   height: 64px;
   margin: 0 auto;
   padding: 0 70px;
@@ -79,7 +80,7 @@ color: #FFFFFF;
   text-transform: capitalize;
   text-decoration: none;
 }
-/*Доделать  блок navigation-list ниже*/
+
 .navigation-list{
   display: flex;
   align-items: center;
@@ -95,9 +96,12 @@ color: #FFFFFF;
   gap: 20px;
 }
 
-/*Доделать блок navigation-user */
 .navigation-user{
-  max-width: 310px;   /*Размер указал с запасом под дополнительный элемент,по умолчанию стоит 268px */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; /*Указал пока это свойство */
+  padding: 0;
+  width: 310px  /*Размер указал с запасом под дополнительный элемент,по умолчанию стоит 268px. Нужен ли он вообще */
 
 }
 
@@ -123,7 +127,7 @@ color: #FFFFFF;
   background-color: #756157;
   display: flex;
   width: 160px;
-  padding: 8px 50px; /*У меня кнопка не соответствует макету по ширине!!!!!*/
+  padding: 8px 50px; /*У меня кнопка не соответствует макету по ширине и выпадает из края страницы !!!!!*/
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -142,6 +146,16 @@ color: #FFFFFF;
   background-repeat: no-repeat;
 }
 
+.page-container{
+width: 1200px;
+margin: 0 auto;
+}
+
+.main-title-img{
+display: block;
+  margin: 0 auto;
+}
+
 .advantages{
   text-align: center;
 }
@@ -152,15 +166,16 @@ color: #FFFFFF;
   line-height: 36px;
   text-transform: uppercase;
 }
-
+/*доделать ниже*/
 .advantages-list {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+
 }
 
-.advantages-title {
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
+.advantages-item{
+
 }
 
 .infrastructure{
