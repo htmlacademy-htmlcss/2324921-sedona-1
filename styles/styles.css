@@ -23,13 +23,12 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000 ;
-  background-color: #FFF;
-}
+  background: #F2F2F2;}
 
 .button{
   font-family: inherit;
@@ -45,7 +44,14 @@ color: #FFFFFF;
   border: none;
   cursor: pointer;
 }
-
+.container{
+  width: 1200px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
 .page-header{
   color: #000000;
   background-color: #FFF;
@@ -125,9 +131,9 @@ color: #FFFFFF;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
-  display: flex;
+  box-sizing: border-box;
   width: 160px;
-  padding: 8px 50px; /*У меня кнопка не соответствует макету по ширине и выпадает из края страницы !!!!!*/
+  padding: 8px 10px; /*У меня кнопка не соответствует макету по ширине и выпадает из края страницы !!!!!*/
   justify-content: center;
   align-items: center;
   border-radius: 4px;
