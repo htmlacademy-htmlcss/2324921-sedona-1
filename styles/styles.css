@@ -39,7 +39,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-align: center;
-color: #FFFFFF;
+  color: #FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
@@ -61,25 +61,21 @@ color: #FFFFFF;
 
 .navigation{
   display: flex;
-  width: 1060px; /*Оставил ширину,хотя без нее мне нравится больше!!!!!*/
-  height: 64px;
-  margin: 0 auto;
-  padding: 0 70px;
+  width: 1200px;
+  margin:0 auto;
 }
 
 .navigation-logo-link{
+  margin-left: 70px;
   width: 140px;
   height: 70px;
 }
 
-.navigation-list-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly; /*Указал пока это свойство */
+.navigation-main-list {
+  margin: 0 0 0 30px;
   padding: 0;
-  margin-left: 30px
-;
-  width: 460px; /*Размер указал с запасом под дополнительный элемент, по умолчанию стоит 339px*/
+  min-width: 340px;
+  max-width: 420px;
   list-style: none;
 }
 .navigation-link{
@@ -92,21 +88,12 @@ color: #FFFFFF;
   text-decoration: none;
 }
 
-.user-links{
-  display: flex;
-  height: 64px;
-  align-items: center;
-  gap: 20px;
-}
-
-.navigation-list-user{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly; /*Указал пока это свойство */
+.navigation-user-list{
+  margin-left: auto;
   padding: 0;
   list-style: none;
-  width: 310px  /*Размер указал с запасом под дополнительный элемент,по умолчанию стоит 268px. Нужен ли он вообще */
-
+  min-width: 40px;
+  max-width: 100px;
 }
 
 .navigation-user-link{
@@ -120,6 +107,7 @@ color: #FFFFFF;
 }
 
 .button-here{
+  display: flex;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -129,9 +117,10 @@ color: #FFFFFF;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
-  box-sizing: border-box;
-  width: 160px;
-  padding: 8px 10px; /*У меня кнопка не соответствует макету по ширине и выпадает из края страницы !!!!!*/
+  box-sizing: border-box;   /*box-sizing:border-box; работал,сейчас не работает,не пойму */
+  margin-left: 20px;
+  min-width: 160px;
+  max-width: 260px;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -141,10 +130,10 @@ color: #FFFFFF;
   flex-grow: 1;
 }
 
-.main-title{
-  background-image:url("../images/catalog/mainphoto.jpg") ;
+.main-index{
   color: #000000;
   background-color: #FFF;
+  background-image:url("../images/catalog/mainphoto.jpg") ;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -159,33 +148,67 @@ display: block;
   margin: 0 auto;
 }
 
-.advantages{
-  text-align: center;
-}
+/*Преимущества*/
 
-.advantages-title{
+
+.advantages-title-town {
+  display: flex;
+  padding-top: 70px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
-/*доделать ниже*/
-.advantages-list {
+
+.advantages-description{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  padding-bottom: 70px;
+}
+
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+  list-style: none;
+  margin:0;
+  padding: 0;
+
+
+}
+.advantages-title{
+  text-transform: uppercase;
+
+}
+.advantages-item {
+  display: flex;
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .advantages-img{
+    width: 800px;
+
 
 }
 
-.advantages-item{
-
-}
 
 .infrastructure{
   text-align: center;
 }
 
-.infrastructure-title{
+.infrastructure-title-town{
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -239,7 +262,12 @@ display: block;
 }
 
 .button-search{
+  display: flex;
+  box-sizing: border-box;
+  margin: auto;
   font-size: 20px;
+  min-width: 276px;
+  max-width: 376px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
@@ -248,6 +276,7 @@ display: block;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
+  justify-content: space-evenly;
 }
 
 .page-footer{
