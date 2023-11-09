@@ -12,25 +12,26 @@
 <!--Шапка-->
     <header class="page-header">
       <nav class="navigation">
-        <div class="logo-links">
         <a class="navigation-logo-link" href="main-page">
-          <img class="navigation-logo-img" src="images/icons/logotypes/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона"></a>
+          <img class="navigation-logo-img" src="images/icons/logotypes/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона">
+        </a>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list-main">
           <li class="navigation-item">
-            <a class="navigation-link" href="main.html">Главная</a>
+            <a class="navigation-link" href="main.html">Главная
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="about.html">О Седоне
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостинницы</a>
+            <a class="navigation-link" href="catalog.html">Гостинницы
+            </a>
           </li>
         </ul>
-        </div>
 
-     <div class ="user-links">
-        <ul class="navigation-list navigation-user">
+        <ul class=" navigation-list-user">
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -43,8 +44,8 @@
             </a>
           </li>
         </ul>
-        <a class="button-here" href="#">Хочу сюда!</a>
-     </div>
+        <a class="button button-here" href="#">Хочу сюда!
+        </a>
       </nav>
     </header>
 <!--Главная-->
@@ -119,17 +120,15 @@
 
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <div class="container">
           <p class="search-title">Заинтересовались?</p>
           <p class="search-description">Укажите предпологаемые даты поездки,и мы покажем вам лучшие
             предложения гостиниц в Седоне</p>
           <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
-        </div>
       </section>
 <!--Подписка-->
       <section class="subscription">
         <h2 class="visually-hidden">Подписка</h2>
-        <div>
+
           <p class="subscription-title">Подпишитесь на рассылку</p>
           <p class="subscription-description"> Только полезная информация и кикакого спама, честное бойскаутское!</p>
 
@@ -141,13 +140,12 @@
               <span class="visually-hidden">Подписаться</span>
             </button>
           </form>
-        </div>
       </section>
       </div>
     </main>
     <!--Подвал-->
     <footer class="page-footer">
-      <section class="footer-social">
+      <div class="footer-social">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -166,12 +164,16 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section>
-        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812 12 12</a>
-        <a class="webdeveloper-logo-link" href="https://htmlacademy.ru/">
-          <img class="webdeveloper-logo-link" src="images/icons/logotypes/htmlacademy-logo.svg" width="115" height="34" alt=".html academy"></a>
-      </section>
+      </div>
+        <div class="footer-phone-wrapper">
+          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812 12 12
+          </a>
+        </div>
+        <div class="webdeveloper-wrapper">
+          <a class="webdeveloper-logo-link" href="https://htmlacademy.ru/">
+            <img class="webdeveloper-logo-link" src="images/icons/logotypes/htmlacademy-logo.svg" width="115" height="34" alt=".html academy">
+          </a>
+       </div>
     </footer>
   </div>
   </body>

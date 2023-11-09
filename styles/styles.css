@@ -65,20 +65,23 @@ color: #FFFFFF;
   height: 64px;
   margin: 0 auto;
   padding: 0 70px;
-  justify-content: space-between;
-  align-items: flex-start
 }
-.logo-links{
-  display: flex;
-  height: 64px;
-  align-items: center;
-  gap: 30px;       /*!!!!Как лучше сделать??? оставить свойство gap или поставить margin????*/
-}
+
 .navigation-logo-link{
   width: 140px;
   height: 70px;
 }
 
+.navigation-list-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; /*Указал пока это свойство */
+  padding: 0;
+  margin-left: 30px
+;
+  width: 460px; /*Размер указал с запасом под дополнительный элемент, по умолчанию стоит 339px*/
+  list-style: none;
+}
 .navigation-link{
   line-height: 24px;
   font-weight: 700;
@@ -89,14 +92,6 @@ color: #FFFFFF;
   text-decoration: none;
 }
 
-.navigation-list{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly; /*Указал пока это свойство */
-  padding: 0;
-  width: 460px;   /*Размер указал с запасом под дополнительный элемент, по умолчанию стоит 339px*/
-}
-
 .user-links{
   display: flex;
   height: 64px;
@@ -104,11 +99,12 @@ color: #FFFFFF;
   gap: 20px;
 }
 
-.navigation-user{
+.navigation-list-user{
   display: flex;
   align-items: center;
   justify-content: space-evenly; /*Указал пока это свойство */
   padding: 0;
+  list-style: none;
   width: 310px  /*Размер указал с запасом под дополнительный элемент,по умолчанию стоит 268px. Нужен ли он вообще */
 
 }
@@ -139,7 +135,6 @@ color: #FFFFFF;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  gap:20px;
 }
 
 .main-container {
@@ -256,26 +251,53 @@ display: block;
 }
 
 .page-footer{
+  display: flex;
+  flex-direction: row;   /*!!!!!!здесь применил row!!!!!!! */
   font-size: 14px;
+  width: 1060px;
+  padding: 40px 70px 30px 70px;
+  font-weight: 400;
   color: #000000;
   background-color: #FFF;
 }
 
+.footer-social{
+margin: auto;          /*здесь чего-то не хватает или лишнее? Нужна подсказка!!!!!*/
+}
+                        /*Подгонял под макет))))*/
+.footer-social-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  height: 48px;
+  min-width: 144px;
+  max-width: 390px;
+  margin: auto;
+}
+
+.footer-phone-wrapper{
+  width: 331px;
+  min-height: 40px;
+  max-height: 80px;
+  margin: auto;
+}
 .footer-contacts-address-phone{
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 40px; /* 100% */
   text-transform: uppercase;
+  color: #000000;
   text-decoration: none;
-
-  color:  #000000;
 }
 
-.webdeveloper-logo-link  {
+.webdeveloper-wrapper  {
   width: 115px;
-  height: 33px;
+  max-height: 33px;
+  margin:auto;
 }
+
+
 
 
 
