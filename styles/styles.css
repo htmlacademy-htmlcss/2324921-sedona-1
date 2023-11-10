@@ -61,23 +61,29 @@ body {
 
 .navigation{
   display: flex;
+  align-items: center;
   width: 1200px;
+  /*height: 64px;*/
   margin:0 auto;
 }
 
-.navigation-logo-link{
+.navigation-logo-link {
   margin-left: 70px;
+  margin-right: 30px;
   width: 140px;
   height: 70px;
 }
 
 .navigation-main-list {
-  margin: 0 0 0 30px;
+  display: flex;
+  margin-right: auto;
   padding: 0;
   min-width: 340px;
   max-width: 420px;
   list-style: none;
+  align-items: center;
 }
+
 .navigation-link{
   line-height: 24px;
   font-weight: 700;
@@ -89,11 +95,13 @@ body {
 }
 
 .navigation-user-list{
+  display: flex;
   margin-left: auto;
   padding: 0;
   list-style: none;
-  min-width: 40px;
-  max-width: 100px;
+  min-width: 50px;
+  max-width: 170px;
+  align-items: center;
 }
 
 .navigation-user-link{
@@ -118,7 +126,9 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   box-sizing: border-box;   /*box-sizing:border-box; работал,сейчас не работает,не пойму */
-  margin-left: 20px;
+  margin: 0 70px 0 20px;
+  padding: 8px 40px;
+
   min-width: 160px;
   max-width: 260px;
   justify-content: center;
