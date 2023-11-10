@@ -160,53 +160,59 @@ display: block;
 
 /*Преимущества*/
 
-
-.advantages-title-town {
+.advantages-town-wrapper{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-town-title {
   padding-top: 70px;
   margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-/*.advantages-description{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.advantages-town-description{
   margin-top: 25px;
   padding-bottom: 70px;
-}*/
+}
 
-.index-columns{
+/*.index-columns{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+*/
 
+.advantages-realtown-list{
+display: flex;
+flex-wrap: wrap;
 }
 
-.advantages-list {
+.advantages-img{
+  width: 800px;
+}
+/*.advantages-list {
   display: flex;
   flex-direction: column;
-
-
 }
+ */
 .advantages-title{
   text-transform: uppercase;
 
 }
 .advantages-item {
-  display: flex;
+  width: 400px;
 
 }
 
-.items-square-road-tourists{
+.advantages-dignities{
   display: flex;
-  width: 400px;
+  list-style: none;
+
 
 }
 
