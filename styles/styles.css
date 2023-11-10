@@ -178,7 +178,7 @@ display: block;
 
 .advantages-town-description{
   margin-top: 25px;
-  padding-bottom: 70px;
+  padding-bottom: 45px;
   font-size: 22px;
 }
 
@@ -248,11 +248,25 @@ display: block;
 
 /*Инфраструктура*/
 
+.infrastructure-town-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .infrastructure-town-title{
+  padding-top: 70px;
+  margin: auto;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.infrastructure-town-description{
+  margin-top: 25px;
+  padding-bottom: 45px;
+  font-size: 22px;
 }
 
 .infrastructure-list{
