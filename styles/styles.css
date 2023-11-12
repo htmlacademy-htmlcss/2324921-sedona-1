@@ -119,23 +119,15 @@ body {
 }
 
 .button-here{
-  display: flex;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
   color: #FFFFFF;
   background-color: #756157;
-  box-sizing: border-box;   /*box-sizing:border-box; работал,сейчас не работает,не пойму */
+  box-sizing: border-box;
   margin: 0 70px 0 20px;
   padding: 8px 40px;
   min-width: 160px;
   max-width: 260px;
-  justify-content: center;
-  align-items: center;
   border-radius: 4px;
 }
 
@@ -351,23 +343,14 @@ display: block;
 }
 
 .button-search{
-  display: flex;
   box-sizing: border-box;
   margin: 0 412px 59px;
   padding: 8px 50px;
-  font-size: 20px;
   min-width: 276px;
   max-width: 376px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
   border-radius: 4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
   color: #FFFFFF;
   background-color: #756157;
-  justify-content: space-evenly;
 }
 
 /*Подписка*/
@@ -394,14 +377,24 @@ display: block;
 }
 
 
-.footer-social-list {
+.social-list {
   display: flex;
   flex-direction: row;
   list-style: none;
-  height: 48px;
   min-width: 144px;
   max-width: 390px;
-  margin: auto;
+}
+
+.social-item{
+  font-size: 14px;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+
+.social-link{
+  font-size: 16px;
+  text-decoration:none;
+  text-transform: uppercase;
 }
 
 .footer-phone-wrapper{
