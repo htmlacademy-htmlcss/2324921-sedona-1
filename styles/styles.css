@@ -383,11 +383,7 @@ display: block;
   list-style: none;
   min-width: 144px;
   max-width: 390px;
-}
-
-.social-item{
-  font-size: 14px;
-  text-decoration:none;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
