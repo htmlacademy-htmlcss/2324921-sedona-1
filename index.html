@@ -19,7 +19,7 @@
 
         <ul class="navigation-main-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная
+            <a class="navigation-link" href="main">Главная
             </a>
           </li>
           <li class="navigation-item">
@@ -33,13 +33,13 @@
         </ul>
 
         <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="notification-badge">12</span>  <!--Пока эту строку оставил-->
             </a>
@@ -56,20 +56,21 @@
         <section class="main-title">
            <h1 class="visually-hidden"> Седона - городок в Аризоне</h1>
            <img class="main-title-img" src="images/icons/welcome-sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+        <!--Ниже по коду пока оставил векторную картинку таким образом,-->
+          <img class="title-vector" src="images/icons/vector-3.svg" width="1200" height="57" alt="Векторная графика под главной">
         </section>
 
         <!--Преимущества-->
           <section class="advantages">
                <h2 class="visually-hidden"> Преимущества</h2>
             <div class="advantages-intro-wrapper">
-                <p class="advantages-intro-title">Седона-небольшой городок в Аризоне, заслуживающий большего!
-                </p>
+                <h2 class="advantages-intro-title">Седона-небольшой городок в Аризоне, заслуживающий большего!
+                </h2>
                 <p class="advantages-intro-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон.
                 </p>
             </div>
 
-            <ul class="advantages-realtown-list">  <!--Оставил  класс "advantages-realtown-list",общий делать не стал,
-             в комментарии к классу "advantages-bridge-list" я пояснил почему так сделал-->
+            <ul class="advantages-wrapper">
               <li class="advantages-location-item">
                 <h3 class="advantages-title"> Настоящий городок</h3>
                 <p class="advantages-description">Седона-не аттракцион для туристов, там течет своя жизнь
@@ -96,15 +97,14 @@
                 </p>
               </li>
             </ul>
-            <ul class="advantages-bridge-list">  <!--Оставил  класс "advantages-bridge-list",общий делать не стал,
-             потому что в стилях здесь указал flex-direction -row-reverse -->
+            <ul class="advantages-wrapper">
+                <li class="advantages-img">
+                  <img src="images/catalog/mountaincanyon.jpg" width="800" height="385" alt=" Горы и каньоны">
+              </li>
               <li class="advantages-location-item">
                 <h3 class="advantages-title"> Там есть мост дьявола</h3>
                 <p class="advantages-description">Да! По нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
-              </li>
-                <li class="advantages-img">
-                  <img src="images/catalog/mountaincanyon.jpg" width="800" height="385" alt=" Горы и каньоны">
               </li>
             </ul>
          </section>
@@ -113,8 +113,8 @@
          <section class="infrastructure">
            <h2 class="visually-hidden"> Инфраструктура</h2>
            <div class="infrastructure-intro-wrapper">
-             <p class="infrastructure-intro-title">Приезжайте в Седону отдохнуть в комфорте и уюте!
-             </p>
+             <h2 class="infrastructure-intro-title">Приезжайте в Седону отдохнуть в комфорте и уюте!
+             </h2>
              <p class="infrastructure-intro-description">Опытный персонал и качественное обслуживание!
              </p>
            </div>
@@ -146,8 +146,8 @@
        <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
          <div class="wrapper-search">
-           <p class="search-title">Заинтересовались?
-           </p>
+           <h2 class="search-title">Заинтересовались?
+           </h2>
            <p class="search-description">Укажите предпологаемые даты поездки,и мы покажем вам лучшие
             предложения гостиниц в Седоне
            </p>
@@ -160,12 +160,12 @@
        <section class="subscription">
          <h2 class="visually-hidden">Подписка</h2>
           <div class="wrapper-subscription">
-             <p class="subscription-title">Подпишитесь на рассылку
-             </p>
+             <h2 class="subscription-title">Подпишитесь на рассылку
+             </h2>
             <p class="subscription-description"> Только полезная информация и кикакого спама, честное бойскаутское!
             </p>
            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-             <label for="newsletter-email">Email</label>
+             <!--     <label for="newsletter-email">Email</label>    -->
             <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
                id="newsletter-email" required>
              <button class="button newsletter-button" type="submit">Подписаться</button>

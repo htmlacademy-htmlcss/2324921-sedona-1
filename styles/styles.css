@@ -32,6 +32,18 @@ body {
   color: #000000 ;
   background: #F2F2F2;}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Кнопка*/
 .button{
   font-family: inherit;
   font-size: 20px;
@@ -61,7 +73,7 @@ body {
 .page-header{
   color: #000000;
   background-color: #FFF;
-  padding: 25px 70px;
+  padding: 0 70px;
 }
 
 .navigation{
@@ -86,6 +98,8 @@ body {
 }
 
 .navigation-link{
+  display: block;
+  padding: 22px 12px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
@@ -104,16 +118,9 @@ body {
   max-width: 187px;
   align-items: center;
 }
-
-.navigation-user-link{
-  display: flex;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  background-color: #FFF;
-  text-transform: capitalize;
-  text-decoration: none;
+.navigation-user-list .navigation-link{
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .button-here{
@@ -131,6 +138,8 @@ body {
 
 .main-container {
   flex-grow: 1;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .main-index{
@@ -147,9 +156,13 @@ margin: 0 auto;
 }
 
 .main-title-img{
+  display: block;
+  margin: 0 auto ;
+  margin-bottom: 25px;
+}
+
+.title-vector{
 display: block;
-  margin: 0 auto;
-  padding: 26px 0;
 }
 
 /*Преимущества*/
@@ -157,11 +170,14 @@ display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 21px;
+
 }
 
 .advantages-intro-title {
-  padding-top: 70px;
-  margin: auto;
+  margin-top: 69px;
+  margin-bottom: 25px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -169,36 +185,29 @@ display: block;
 }
 
 .advantages-intro-description{
-  margin-top: 25px;
-  padding-bottom: 45px;
+  margin-top: 0;
+  margin-bottom: 69px;
   font-size: 22px;
 }
 
-.advantages-realtown-list{
+.advantages-wrapper{
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.advantages-dignities-list{
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.advantages-bridge-list{
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-direction: row-reverse;
-}
-
+/*
 .advantages-img{
-  display: block;
-  width: 800px;
+ display: block;
+}
+*/
+
+.advantages-dignities-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-title {
@@ -402,8 +411,3 @@ display: block;
 .webdeveloper-logo-link{
   margin: auto;
 }
-
-
-
-
-
