@@ -19,7 +19,7 @@
 
         <ul class="navigation-main-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="main.html">Главная
+            <a class="navigation-link" href="#">Главная
             </a>
           </li>
           <li class="navigation-item">
@@ -61,15 +61,16 @@
         <!--Преимущества-->
           <section class="advantages">
                <h2 class="visually-hidden"> Преимущества</h2>
-            <div class="advantages-town-wrapper">
-                <p class="advantages-town-title">Седона-небольшой городок в Аризоне, заслуживающий большего!
+            <div class="advantages-intro-wrapper">
+                <p class="advantages-intro-title">Седона-небольшой городок в Аризоне, заслуживающий большего!
                 </p>
-                <p class="advantages-town-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон.
+                <p class="advantages-intro-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон.
                 </p>
             </div>
 
-            <ul class="advantages-realtown-list">
-              <li class="advantages-realtown-item">
+            <ul class="advantages-realtown-list">  <!--Оставил  класс "advantages-realtown-list",общий делать не стал,
+             в комментарии к классу "advantages-bridge-list" я пояснил почему так сделал-->
+              <li class="advantages-location-item">
                 <h3 class="advantages-title"> Настоящий городок</h3>
                 <p class="advantages-description">Седона-не аттракцион для туристов, там течет своя жизнь
                 </p>
@@ -95,8 +96,9 @@
                 </p>
               </li>
             </ul>
-            <ul class="advantages-bridge-list">
-              <li class="advantages-bridge-item-">
+            <ul class="advantages-bridge-list">  <!--Оставил  класс "advantages-bridge-list",общий делать не стал,
+             потому что в стилях здесь указал flex-direction -row-reverse -->
+              <li class="advantages-location-item">
                 <h3 class="advantages-title"> Там есть мост дьявола</h3>
                 <p class="advantages-description">Да! По нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -110,13 +112,15 @@
  <!--Инфраструктура-->
          <section class="infrastructure">
            <h2 class="visually-hidden"> Инфраструктура</h2>
-           <div class="infrastructure-town-wrapper">
-             <p class="infrastructure-town-title">Приезжайте в Седону отдохнуть в комфорте и уюте!
+           <div class="infrastructure-intro-wrapper">
+             <p class="infrastructure-intro-title">Приезжайте в Седону отдохнуть в комфорте и уюте!
              </p>
-             <p class="infrastructure-town-description">Опытный персонал и качественное обслуживание!
+             <p class="infrastructure-intro-description">Опытный персонал и качественное обслуживание!
              </p>
            </div>
            <ul class="infrastructure-services-list">
+             <!--ниже по коду общий класс списку делать не стал, потому что у меня в макете проекта background-color
+             у некоторых списков отличается-->
              <li class="infrastructure-housing-item">
                <img src="images/icons/infrastructure/housing.svg" width="76" height="72" alt=" Иконка жилья">
                <h3 class="infrastructure-title">Жилье</h3>
