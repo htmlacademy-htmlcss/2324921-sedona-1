@@ -62,14 +62,15 @@
 
         <!--Преимущества-->
           <section class="advantages">
-               <h2 class="visually-hidden"> Преимущества</h2>
-            <div class="advantages-intro-wrapper">
-              <h3 class="advantages-intro-title">Седона-небольшой городок в Аризоне, заслуживающий большего!
-              </h3>
-              <p class="advantages-intro-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон.
-              </p>
-            </div>
-
+            <section class="advantages-container">
+                 <h2 class="visually-hidden"> Преимущества</h2>
+              <div class="advantages-intro-wrapper">
+                <h3 class="advantages-intro-title">Седона-небольшой городок в Аризоне, заслуживающий большего!
+                </h3>
+                <p class="advantages-intro-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон.
+                </p>
+             </div>
+            </section>
         <!--Список преимуществ-->
             <ul class="advantages-list">
               <li class="advantages-item">
@@ -83,6 +84,7 @@
                   <img  src="images/catalog/houses.jpg" width="800" height="385" alt="Городок с домами" >
               </li>
             </ul>
+
             <ul class=" advantages-dignities-list ">
               <li class="advantages-dignities-item ">
                 <div class="advantages-dignities-container">
@@ -106,6 +108,7 @@
                 </div>
               </li>
             </ul>
+
             <ul class="advantages-list">
                 <li class="advantages-img">
                   <img src="images/catalog/mountaincanyon.jpg" width="800" height="385" alt=" Горы и каньоны">
@@ -121,39 +124,49 @@
          </section>
 
  <!--Инфраструктура-->
-         <section class="infrastructure">
-           <h2 class="visually-hidden"> Инфраструктура</h2>
-           <div class="infrastructure-intro-wrapper">
-             <h3 class="infrastructure-intro-title">Приезжайте в Седону отдохнуть в комфорте и уюте!
-             </h3>
-             <p class="infrastructure-intro-description">Опытный персонал и качественное обслуживание!
-             </p>
-           </div>
+          <section class="infrastructure">
+            <section class="infrastructure-container">
+              <h2 class="visually-hidden"> Инфраструктура</h2>
+              <div class="infrastructure-intro-wrapper">
+                <h3 class="infrastructure-intro-title">Приезжайте в Седону отдохнуть в комфорте и уюте!
+                </h3>
+                <p class="infrastructure-intro-description">Опытный персонал и качественное обслуживание!
+                </p>
+             </div>
+           </section>
+
+            <!--Список-->
            <ul class="infrastructure-services-list">
              <!--ниже по коду общий класс списку делать не стал, потому что у меня в макете проекта background-color
              у некоторых списков отличается-->
-             <li class="infrastructure-housing-item">
+             <li class="infrastructure-item">
+               <div class="infrastructure-services-container">
                <img src="images/icons/infrastructure/housing.svg" width="76" height="72" alt=" Иконка жилья">
                <h4 class="infrastructure-title">Жилье</h4>
                <p class="infrastructure-description">Рекомендуем пожить в настоящем мотеле,все как в кино!
                </p>
+               </div>
              </li>
-             <li class="infrastructure-food-item">
-               <img src="images/icons/infrastructure/food.svg" width="75" height="70" alt=" Иконка еды">
-               <h4 class="infrastructure-title">Еда</h4>
-               <p class="infrastructure-description">Всегда заказывайте топовый фирменный бургер,вы не разочаруетесь!
-               </p>
+             <li class="infrastructure-item">
+               <div class="infrastructure-services-container">
+                  <img src="images/icons/infrastructure/eating.svg" width="75" height="70" alt=" Иконка еды">
+                  <h4 class="infrastructure-title">Еда</h4>
+                  <p class="infrastructure-description">Всегда заказывайте топовый фирменный бургер,вы не разочаруетесь!
+                  </p>
+               </div>
              </li>
-             <li class="infrastructure-souvenirs-item">
-               <img src="images/icons/infrastructure/souvenirs.svg" width="65" height="76" alt=" Иконка сувениров">
-               <h4 class="infrastructure-title">Сувениры</h4>
-               <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!
-               </p>
+             <li class="infrastructure-item">
+               <div class="infrastructure-services-container">
+                 <img src="images/icons/infrastructure/souvenirs.svg" width="65" height="76" alt=" Иконка сувениров">
+                 <h4 class="infrastructure-title">Сувениры</h4>
+                 <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!
+                 </p>
+               </div>
             </li>
            </ul>
          </section>
 
-        <!--Поиск гостиницы-->
+        <!--Блок поиска гостиниц-->
        <section class="search">
          <h2 class="visually-hidden">Поиск гостиницы</h2>
           <div class="search-wrapper">
@@ -167,7 +180,7 @@
          </div>
        </section>
 
-<!--Подписка-->
+<!--Блок подписки-->
        <section class="subscription">
          <h2 class="visually-hidden">Подписка</h2>
           <div class="wrapper-subscription">
@@ -176,7 +189,7 @@
             <p class="subscription-description"> Только полезная информация и кикакого спама, честное бойскаутское!
             </p>
            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-             <!--     <label for="newsletter-email">Email</label>    -->
+             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
                id="newsletter-email" required>
              <button class="button newsletter-button" type="submit">Подписаться</button>
