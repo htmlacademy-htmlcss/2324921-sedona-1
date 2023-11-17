@@ -79,6 +79,7 @@ body {
 .navigation{
   display: flex;
   align-items: center;
+  min-height: 64px;
 }
 
 .navigation-logo-link {
@@ -89,7 +90,7 @@ body {
 
 .navigation-main-list {
   display: flex;
-  margin-right: auto;
+  margin: 0;
   padding: 0;
   min-width: 340px;
   max-width: 420px;
@@ -112,6 +113,8 @@ body {
 .navigation-user-list{
   display: flex;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
   min-width: 50px;
@@ -220,7 +223,7 @@ body {
 
 .advantages-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
