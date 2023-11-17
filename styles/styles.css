@@ -215,7 +215,7 @@ body {
 
 .advantages-title {
   width: 167px;
-  margin:  auto;
+  margin: auto;
   margin-bottom: 30px;
   line-height: 28px;
   text-transform: uppercase;
@@ -390,31 +390,48 @@ display: flex;
 
 /*Подвал*/
 .page-footer{
-  display: flex;
   font-size: 14px;
-  width: 1060px;
-  padding: 40px 70px 30px 70px;
   font-weight: 400;
   color: #000000;
   background-color: #FFF;
 }
 
-.social-list {
+.page-footer-container{
   display: flex;
-  flex-direction: row;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 40px 70px 30px 70px;
+}
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   min-width: 144px;
-  max-width: 390px;
+  max-width: 235px;
   align-items: center;
 }
 
-.social-link{
+.footer-social-link{
   font-size: 20px;
   text-decoration:none;
   color: #000000;
   background-color: #FFF;
   text-transform: capitalize;
 }
+
+.footer-social-item{
+  width: 47px;
+  height: 40px;
+}
+
+/*
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+*/
+
 
 .footer-phone-wrapper{
   width: 331px;
