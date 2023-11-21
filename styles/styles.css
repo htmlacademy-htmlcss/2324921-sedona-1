@@ -86,10 +86,12 @@ body {
   margin-right: 30px;
   width: 140px;
   height: 70px;
+  align-self: flex-start;
 }
 
 .navigation-main-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   min-width: 340px;
@@ -194,18 +196,60 @@ body {
 
 /*Список преимуществ*/
 
-.advantages-list{
+/*.advantages-list,
+.advantages-dignities-list{
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+*/
+
+
+/*Удаляем*/
+.advantages-list-town,
+.advantages-dignities-list{
+  display: grid;
+  grid-template-columns:400px auto auto;
+  grid-template-rows: 385px auto auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*этот класс ниже потом удалить*/
+.advantages-list-bridge{
+  display: grid;
+  grid-template-columns:400px 400px 400px;
+  grid-template-rows: 385px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list-reverse{
+  flex-direction: row-reverse;
+}
+/*Этот класс потом удаляем*/
+.advantages-item-bridge{
+  grid-column:3/4;
+  width: 230px;
+  min-height: 179px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 103px 85px;
+}
+
+.advantages-img-bridge{
+  grid-row: 1/2;
+
 }
 
 
 .advantages-img{
  display: flex;
 }
-
 
 .advantages-title {
   margin: 0 auto;
@@ -214,6 +258,7 @@ body {
 }
 
 .advantages-item {
+
   width: 230px;
   min-height: 179px;
   background-color: #82B3D3;
@@ -228,13 +273,14 @@ body {
   margin-bottom: 0;
 }
 
+/*
 .advantages-dignities-list{
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
+*/
 
 .advantages-dignities-item{
   width: 230px;
@@ -383,8 +429,11 @@ display: flex;
   background-color: #FFF;
 }
 
+/*Убрать гриды*/
 .page-footer-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: 142px auto 115px;
+ /* display: flex; */
   width: 1060px;
   margin: 0 auto;
   padding: 40px 70px 30px 70px;
