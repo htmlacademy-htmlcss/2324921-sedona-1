@@ -44,7 +44,7 @@ body {
 }
 
 /*Кнопка*/
-.button{
+.button {
   font-family: inherit;
   font-size: 20px;
   font-style: normal;
@@ -53,6 +53,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   background-color: #82B3D3;
+  padding: 8px 50px;
   text-transform: uppercase;
   border-radius: 0 4px 4px 0;
   text-decoration: none;
@@ -60,7 +61,7 @@ body {
   cursor: pointer;
 }
 
-.container{
+.container {
   width: 1200px;
   min-height: 100%;
   display: flex;
@@ -70,13 +71,13 @@ body {
 }
 
 /*Шапка*/
-.page-header{
+.page-header {
   color: #000000;
   background-color: #FFF;
   padding: 0 70px;
 }
 
-.navigation{
+.navigation {
   display: flex;
   align-items: center;
   min-height: 64px;
@@ -100,7 +101,7 @@ body {
   align-items: center;
 }
 
-.navigation-link{
+.navigation-link {
   display: block;
   padding: 22px 12px;
   line-height: 24px;
@@ -112,7 +113,7 @@ body {
   text-decoration: none;
 }
 
-.navigation-user-list{
+.navigation-user-list {
   display: flex;
   margin-left: auto;
   margin-top: 0;
@@ -123,12 +124,25 @@ body {
   max-width: 187px;
   align-items: center;
 }
-.navigation-user-list .navigation-link{
+
+/*Иконки*/
+.navigation-user-list .navigation-item:nth-child(1) .navigation-link {
+  background-image: url("../images/icons/nav-icons/search1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navigation-user-list  .navigation-link {
+  background-image: url("../images/icons/nav-icons/favorites.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user-list .navigation-link {
   min-width: 20px;
   min-height: 20px;
 }
 
-.button-here{
+.button-here {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
@@ -154,25 +168,19 @@ body {
   background-repeat: no-repeat;
 }
 
-/*.page-container{
-
-}*/
-
 .main-title-img{
   display: block;
   margin: 0 auto ;
   padding-top: 51px;
   padding-bottom: 82px;
   min-height: 352px;
-
 }
-
-
 
 /*Преимущества*/
 .advantages-container{
   padding: 69px 0;
 }
+
 .advantages-intro-wrapper{
   width: 651px;
   margin: 0 auto;
@@ -206,21 +214,21 @@ body {
 */
 
 
-/*Удаляем*/
+/*Удаляем, если будут флексы*/
 .advantages-list-town,
 .advantages-dignities-list{
   display: grid;
-  grid-template-columns:400px auto auto;
-  grid-template-rows: 385px auto auto;
+  grid-template-columns:repeat(3, 400px);
+  grid-template-rows: 385px ;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/*этот класс ниже потом удалить*/
+/*При использовании флексов этот класс ниже потом удалить*/
 .advantages-list-bridge{
   display: grid;
-  grid-template-columns:400px 400px 400px;
+  grid-template-columns:repeat(3, 400px);
   grid-template-rows: 385px;
   list-style-type: none;
   margin: 0;
@@ -230,7 +238,8 @@ body {
 .advantages-list-reverse{
   flex-direction: row-reverse;
 }
-/*Этот класс потом удаляем*/
+
+/*Этот класс потом удаляем, если флексы*/
 .advantages-item-bridge{
   grid-column:3/4;
   width: 230px;
@@ -266,7 +275,7 @@ body {
   text-align: center;
   padding: 103px 85px;
 }
-/*    */
+
 .advantages-description{
   line-height: 21px;
   font-size: 18px;
@@ -325,13 +334,13 @@ body {
   margin: 0;
 }
 
-
-.infrastructure-item{
+.infrastructure-item {
   width: 230px;
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
   text-align: center;
   padding: 80px 85px;
+}
 
 .infrastructure-title{
   font-size: 24px;
@@ -340,16 +349,12 @@ body {
   margin: 0 auto;
 }
 
-}
+
 .infrastructure-description{
   font-size: 18px;
   margin-bottom: 0;
   line-height: 21px;
-
 }
-
-
-
 
 /*Поиск гостиниц*/
 .search{
@@ -431,14 +436,15 @@ display: flex;
 
 /*Убрать гриды*/
 .page-footer-container{
+ /* display: flex; */
   display: grid;
   grid-template-columns: 142px auto 115px;
- /* display: flex; */
-  width: 1060px;
-  margin: 0 auto;
   padding: 40px 70px 30px 70px;
   justify-content: space-between;
+  align-items: center;
+
 }
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -456,6 +462,12 @@ display: flex;
   color: #000000;
   background-color: #FFF;
   text-transform: capitalize;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  width: 24px;
+  height: 14px;
 }
 
 .footer-social-item{
@@ -463,12 +475,16 @@ display: flex;
   height: 40px;
 }
 
+  .footer-social-vk{
+  background-image: url("../images/icons/social/social-vk.svg");
+
+}
+
 /*
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
 }
 */
-
 
 .footer-phone-wrapper{
   width: 331px;
@@ -494,6 +510,6 @@ display: flex;
   margin:0;
 }
 
-.webdeveloper-logo-link{
+.webdeveloper-logo-link {
   margin: auto;
 }
