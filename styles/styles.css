@@ -142,6 +142,24 @@ body {
   min-height: 20px;
 }
 
+.navigation-user-item {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 10px;
+  right: 3px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  background-color:  #7DB54F;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+/*Кнопка*/
 .button-here {
   font-size: 16px;
   line-height: 20px;
@@ -179,7 +197,7 @@ body {
 .container-position {
   position: relative;
 }
-.vector-svg {
+.graphics-img {
  position: absolute;
   bottom: 0;
 }
@@ -312,6 +330,9 @@ body {
   padding: 103px 85px;
 }
 
+.advantages-dignities-item-color {
+  background-color:  rgba(131, 179, 211, 0.20);
+}
 
 /* Инфраструктура */
 .infrastructure-container{
@@ -336,6 +357,10 @@ body {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
+}
+
+li.infrastructure-item.infrastructure-item-color {
+  background-color: #FFFFFF;
 }
 
 /*Список*/
