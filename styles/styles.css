@@ -225,7 +225,9 @@ body {
   padding: 0;
 }
 
-/*При использовании флексов этот класс ниже потом удалить*/
+
+
+/*advantages-dignities-item-roadПри использовании флексов этот класс ниже потом удалить*/
 .advantages-list-bridge{
   display: grid;
   grid-template-columns:repeat(3, 400px);
@@ -291,6 +293,7 @@ body {
 }
 */
 
+
 .advantages-dignities-item{
   width: 230px;
   min-height: 179px;
@@ -314,16 +317,17 @@ body {
 }
 
 .infrastructure-intro-title{
-  margin-top: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .infrastructure-intro-description{
-  margin:0;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
 }
 
 /*Список*/
@@ -358,7 +362,8 @@ body {
 
 /*Поиск гостиниц*/
 .search{
-padding: 96px 0;
+padding: 96px 304px;
+
 }
 
 .search-wrapper{
@@ -372,12 +377,14 @@ padding: 96px 0;
   line-height: 36px;
   text-transform: uppercase;
   margin-top: 0;
-
+  margin-bottom: 20px;
 }
 
 .search-description{
   font-size: 22px;
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 
 .button-search{
@@ -394,8 +401,6 @@ padding: 96px 0;
 /*Подписка*/
 .subscription{
   background-image: url("../images/catalog/subscribe.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   padding:96px 258px 104px;
 }
 
@@ -412,6 +417,7 @@ padding: 96px 0;
   color: #FFFFFF;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .subscription-description{
@@ -420,10 +426,25 @@ padding: 96px 0;
   color: #FFFFFF;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 54px;
+
 }
 
 .newsletter-form-wrapper{
 display: flex;
+}
+
+.input-field {
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 452px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background:  #F2F2F2;
 }
 
 /*Подвал*/
@@ -475,9 +496,19 @@ display: flex;
   height: 40px;
 }
 
-  .footer-social-vk{
-  background-image: url("../images/icons/social/social-vk.svg");
+/*
+  .navigation-user-list .navigation-item:nth-child(1) .navigation-link {
+  background-image: url("../images/icons/nav-icons/search1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  */
 
+.footer-social-list,
+.footer-social-item:nth-child(1),
+.footer-social-vk  {
+  background-image: url("../images/icons/social/social-vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*
