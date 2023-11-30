@@ -108,7 +108,6 @@ body {
 
 .button-here:active {
   background-color: #756157;
-  color: rgba(255,255,255,0.3);
 }
 
 .button-search:hover {
@@ -123,7 +122,6 @@ body {
 
 .button-search:active {
   background-color: #756157;
-  color: rgba(255,255,255,0.3);
 }
 
 .container {
@@ -149,16 +147,15 @@ body {
 }
 
 .navigation-logo-link {
-  /*position: relative;*/
+  position: relative;
   margin-right: 30px;
   width: 140px;
-  height: 70px;
+  height: 64px;
   align-self: flex-start;
 }
 
 .navigation-logo-img {
-  /*position: absolute;*/
-  /*bottom: -6px;*/
+  position: absolute;
 }
 
 .navigation-main-list {
@@ -173,15 +170,15 @@ body {
 }
 
 .navigation-item {
-  padding: 23px 16px;
+  padding: 20px 16px;
 }
 
 .navigation-link:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .navigation-link:active {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .navigation-link {
@@ -221,9 +218,6 @@ body {
   align-items: center;
 }
 
-.navigation-user-item {
-  padding: 25px 12px;
-}
 
 /*Иконки*/
 .navigation-link-search {
@@ -232,43 +226,46 @@ body {
   background-position: center;
 }
 
-.navigation-link-favorite {
-  background-image: url("../images/icons/nav-icons/favorites.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .navigation-link-search:hover {
-  opacity: 0.8;
-}
-
-.navigation-link-search:active {
   opacity: 0.6;
 }
 
+.navigation-link-search:active {
+  opacity: 0.4;
+}
+
 .navigation-link-favorite:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 
 }
 
 .navigation-link-favorite:active {
-  opacity: 0.6;
+  opacity: 0.4;
 
 }
 
 .navigation-user-list .navigation-link {
   min-width: 20px;
   min-height: 20px;
+  padding: 12px;
+
 }
 
-.navigation-user-item-favorites {
+.navigation-link-favorite {
   position: relative;
+  background-image: url("../images/icons/nav-icons/favorites.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+/*.navigation-user-item-favorites {*/
+/*  position: relative;*/
+/*}*/
 
 .notification-badge {
   position: absolute;
-  top: 10px;
-  right: 3px;
+  top: 3px;
   color: #fff;
   padding: 5px;
   border-radius: 10px;
