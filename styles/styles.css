@@ -189,10 +189,10 @@ body {
   padding: 20px 16px;
 }
 
-
 .navigation-item-current {
   position: relative;
 }
+
 .navigation-item-current::after {
   position: absolute;
   content: "";
@@ -216,7 +216,7 @@ body {
 }
 
 
-/*Иконки*/
+/*Иконки навигации пользователя*/
 .navigation-link-search {
   background-image: url("../images/icons/nav-icons/search.svg");
   background-repeat: no-repeat;
@@ -234,19 +234,16 @@ body {
 
 .navigation-link-favorite:hover {
   opacity: 0.6;
-
 }
 
 .navigation-link-favorite:active {
   opacity: 0.4;
-
 }
 
 .navigation-user-list .navigation-link {
   min-width: 20px;
   min-height: 20px;
   padding: 12px;
-
 }
 
 .navigation-link-favorite {
@@ -255,10 +252,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/*.navigation-user-item-favorites {*/
-/*  position: relative;*/
-/*}*/
 
 .notification-badge {
   position: absolute;
@@ -272,22 +265,21 @@ body {
   line-height: 10px;
 }
 
-
 .main-container {
   flex-grow: 1;
-
 }
 
 .main-title {
-  background-image:url("../images/catalog/mainphoto.jpg");
+  /*position: relative;*/
+  background-image: url("../images/icons/vector.svg"), url("../images/catalog/mainphoto.jpg") ;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: bottom;
+  /*background-size: cover;*/
 }
 
 .main-title:after {
   position: absolute;
-  background-image:url("../images/icons/vector-3.svg");
+  background-image:url("../images/icons/vector.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   width: 1200px;
@@ -475,17 +467,17 @@ body {
 }
 
 /* Инфраструктура */
-.infrastructure-container{
+.infrastructure-container {
   padding: 64px 0;
 }
 
-.infrastructure-intro-wrapper{
+.infrastructure-intro-wrapper {
   width: 505px;
   margin:0 auto;
   text-align: center;
 }
 
-.infrastructure-intro-title{
+.infrastructure-intro-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -493,7 +485,7 @@ body {
   margin-bottom: 20px;
 }
 
-.infrastructure-intro-description{
+.infrastructure-intro-description {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
@@ -519,6 +511,7 @@ li.infrastructure-item.infrastructure-item-color {
   padding: 151px 85px 80px;
 }
 
+/*Иконки инфраструктуры*/
 .infrastructure-item-icon-housing {
   background-image: url("/images/icons/infrastructure/housing.svg");
   background-repeat: no-repeat;
@@ -588,13 +581,13 @@ padding: 96px 304px;
   padding:96px 258px 104px;
 }
 
-.subscription-wrapper{
+.subscription-wrapper {
   width: 684px;
   margin: 0;
   text-align: center;
 }
 
-.subscription-title{
+.subscription-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
