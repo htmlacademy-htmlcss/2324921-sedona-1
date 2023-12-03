@@ -189,6 +189,7 @@ body {
   padding: 20px 16px;
 }
 
+/*На главную*/
 .navigation-item-current {
   position: relative;
 }
@@ -202,6 +203,9 @@ body {
   height: 2px;
   background-color:  #756257;
 }
+
+/*К каталогу*/
+
 
 .navigation-user-list {
   display: flex;
@@ -297,14 +301,6 @@ body {
   min-height: 352px;
 }
 
-.container-position {
-  position: relative;
-}
-.graphics-img:after {
- position: absolute;
-  bottom: 0;
-}
-
 /*Преимущества*/
 .advantages-container {
   padding: 69px 0;
@@ -331,19 +327,6 @@ body {
   line-height: 26px;
 }
 
-/*Список преимуществ*/
-
-/*.advantages-list,
-.advantages-dignities-list{
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-*/
-
-
-/*Удаляем, если будут флексы*/
 .advantages-list-town,
 .advantages-dignities-list {
   display: grid;
@@ -354,9 +337,6 @@ body {
   padding: 0;
 }
 
-
-
-/*advantages-dignities-item-roadПри использовании флексов этот класс ниже потом удалить*/
 .advantages-list-bridge {
   display: grid;
   grid-template-columns:repeat(3, 400px);
@@ -370,7 +350,6 @@ body {
   flex-direction: row-reverse;
 }
 
-/*Этот класс потом удаляем, если флексы*/
 .advantages-item-bridge {
   grid-column:3/4;
   width: 230px;
@@ -383,9 +362,7 @@ body {
 
 .advantages-img-bridge {
   grid-row: 1/2;
-
 }
-
 
 .advantages-img {
  display: flex;
@@ -426,15 +403,6 @@ body {
   font-size: 18px;
   margin-bottom: 0;
 }
-
-/*
-.advantages-dignities-list{
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-*/
 
 .advantages-title-dignities-current {
   position: relative;
@@ -534,9 +502,7 @@ li.infrastructure-item.infrastructure-item-color {
   line-height: 28px;
   text-transform: uppercase;
   margin: 30px 0;
-
 }
-
 
 .infrastructure-description {
   font-size: 18px;
@@ -544,11 +510,9 @@ li.infrastructure-item.infrastructure-item-color {
   line-height: 21px;
 }
 
-
 /*Поиск гостиниц*/
 .search{
 padding: 96px 304px;
-
 }
 
 .search-wrapper {
@@ -571,8 +535,6 @@ padding: 96px 304px;
   margin-top: 0;
   margin-bottom: 54px;
 }
-
-
 
 /*Подписка*/
 .subscription{
@@ -603,7 +565,6 @@ padding: 96px 304px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 54px;
-
 }
 
 .newsletter-form-wrapper{
@@ -635,6 +596,7 @@ display: flex;
   background: #E6E6E6;
   border: 3px solid #83B3D3;
 }
+
   /*Подвал*/
 .page-footer{
   font-size: 14px;
@@ -643,9 +605,7 @@ display: flex;
   background-color: #FFF;
 }
 
-/*Убрать гриды*/
 .page-footer-container{
- /* display: flex; */
   display: grid;
   grid-template-columns: 142px auto 115px;
   padding: 40px 70px 30px 70px;
@@ -671,15 +631,12 @@ display: flex;
   font-size: 20px;
   text-decoration:none;
   color: #83B3D3;
-  /*width: 47px;*/
   height: 40px;
   background-color: #FFF;
   text-transform: capitalize;
-  /*display: block;*/
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
-  /*background-size: 24px 14px;*/
 
 }
 
@@ -688,11 +645,6 @@ display: flex;
   height: 40px;
   padding: 0 5px;
 }
-
-/* .footer-social-vk  {*/
-/*   height: 40px;*/
-/*   background-image: url("../images/icons/social/social-vk.svg");*/
-/*}*/
 
 .footer-social-link:hover {
  color: #68A2CA;
@@ -707,21 +659,6 @@ display: flex;
 .footer-social-link:active {
  color: #68A2CA4D;
 }
-
- /*.footer-social-tg {*/
- /*  height: 40px;*/
- /*  background-image: url("../images/icons/social/social-telegram.svg");*/
- /*}*/
-
- /*.footer-social-youtube {*/
- /*  height: 40px;*/
- /*  background-image: url("../images/icons/social/social-youtube.svg");*/
- /*}*/
-
-/*.footer-social-link:nth-child(3n) {*/
-/*  margin-right: 0;*/
-/*}*/
-
 
 .footer-phone-wrapper{
   width: 331px;
@@ -756,21 +693,20 @@ color: #7561574D;
 .webdeveloper-wrapper  {
   width: 115px;
   max-height: 33px;
-  /*margin:0;*/
 }
 
 .webdeveloper-logo-link {
   color: #000000;
-
 }
+
 .webdeveloper-logo-link:hover {
  color:  #756157;
 }
+
 .webdeveloper-logo-link:focus {
   color:  #756157;
-
 }
+
 .webdeveloper-logo-link:active {
   color: #7561574D;
-
 }
