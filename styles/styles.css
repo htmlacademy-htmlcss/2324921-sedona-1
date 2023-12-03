@@ -270,19 +270,18 @@ body {
 }
 
 .main-title {
-  /*position: relative;*/
-  background-image: url("../images/icons/vector.svg"), url("../images/catalog/mainphoto.jpg") ;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  /*background-size: cover;*/
+  position: relative;
+  background-image: url("../images/catalog/mainphoto.jpg") ;
+  background-size: cover;
 }
 
 .main-title:after {
   position: absolute;
+  content: "";
+  bottom: 0;
   background-image:url("../images/icons/vector.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
   width: 1200px;
+  height: 57px;
 }
 
 .main-index {
@@ -513,19 +512,19 @@ li.infrastructure-item.infrastructure-item-color {
 
 /*Иконки инфраструктуры*/
 .infrastructure-item-icon-housing {
-  background-image: url("/images/icons/infrastructure/housing.svg");
+  background-image: url("../images/icons/infrastructure/housing.svg");
   background-repeat: no-repeat;
   background-position: right 163px top 80px;
 }
 
 .infrastructure-item-icon-eating {
-  background-image: url("/images/icons/infrastructure/eating.svg");
+  background-image: url("../images/icons/infrastructure/eating.svg");
   background-repeat: no-repeat;
   background-position: right 163px top 80px;
 }
 
 .infrastructure-item-icon-souvenirs {
-  background-image: url("/images/icons/infrastructure/souvenirs.svg");
+  background-image: url("../images/icons/infrastructure/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: right 163px top 80px;
 }
