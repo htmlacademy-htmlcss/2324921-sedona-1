@@ -156,6 +156,7 @@ body {
 
 .navigation-logo-img {
   position: absolute;
+  z-index: 20;
 }
 
 .navigation-main-list {
@@ -270,7 +271,7 @@ body {
 }
 
 .main-container {
-  flex-grow: 1;
+  flex-grow: 11;
 }
 
 .main-title {
