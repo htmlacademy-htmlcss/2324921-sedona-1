@@ -809,8 +809,30 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .select-control {
+  width: 292px;
+  font-family: inherit;
+  padding: 14px 40px 14px 20px;
+  color:  #333;
+  font-size: 18px;
+  line-height: 21px;
   margin-right: 70px;
   margin-left: auto;
+  appearance: none;
+  border-radius: 4px;
+  border: 2px solid  #E5E5E5;
+  background-image: url("/images/icons/catalogpage-simbols/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.select-control:hover {
+  border-radius: 4px;
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border-radius: 4px;
+  border: 2px solid #3F5E72;
 }
 
 /*Список гостиниц*/
