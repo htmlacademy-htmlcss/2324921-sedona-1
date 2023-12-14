@@ -61,14 +61,17 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <svg class="breadcrumbs-link-main" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
+                <svg class="breadcrumbs-link-main" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                    fill="white"/>
                   <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
                 </svg>
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
-            <li class="breadcrumbs-item breadcrumbs-item-icon">
+            <li class="breadcrumbs-item">
               <a class="breadcrumbs-link-hotels" href="#">Гостиницы
               </a>
             </li>
@@ -179,13 +182,35 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
           <div class="sorting-button-wrapper">
-            <a class="button" href="#">
+            <a href="#" class="card-grid-toggle card-grid-toggle-current">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 0H0V6H4V0Z" fill="black"/>
+                <path d="M16 0H12V6H16V0Z" fill="black"/>
+                <path d="M10 0H6V6H10V0Z" fill="black"/>
+                <path d="M4 8H0V14H4V8Z" fill="black"/>
+                <path d="M16 8H12V14H16V8Z" fill="black"/>
+                <path d="M10 8H6V14H10V8Z" fill="black"/>
+              </svg>
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a class="button" href="#">
-              <span class="visually-hidden">Показать крупно</span>  <!--Точнее узнать название иконки-->
+            <a href="#" class="card-grid-toggle">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 12H0V14H16V12Z" fill="black"/>
+                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+              </svg>
+              <span class="visually-hidden">Показать крупно</span>
             </a>
-            <a class="button button-view" href="#">
+            <a href="#" class="card-grid-toggle">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0H0V2H2V0Z" fill="black"/>
+                <path d="M16 0H4V2H16V0Z" fill="black"/>
+                <path d="M2 4H0V6H2V4Z" fill="black"/>
+                <path d="M16 4H4V6H16V4Z" fill="black"/>
+                <path d="M2 8H0V10H2V8Z" fill="black"/>
+                <path d="M16 8H4V10H16V8Z" fill="black"/>
+                <path d="M2 12H0V14H2V12Z" fill="black"/>
+                <path d="M16 12H4V14H16V12Z" fill="black"/>
+              </svg>
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -206,13 +231,12 @@
               </a>
               <a class="hotel-card-favorite-button button" href="#">В избранное
               </a>
-              <div class="hotel-rating-stars">
-                <p class="visually-hidden"> четырехзвездночный отель</p>
+              <div class="hotel-stars hotel-stars-4">
+                <span class="visually-hidden">4 звезды</span>
               </div>
               <p class="hotel-rating">Рейтинг: 8,5</p>
             </div>
           </li>
-
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-img-link" src="images/catalog/hotel-2.jpg" alt="Скалы в закате на фоне радуги">
@@ -226,8 +250,8 @@
               </a>
               <a class="hotel-card-favorite-button-color button" href="#">В избранное
               </a>
-              <div class="hotel-rating-stars">
-                <p class="visually-hidden"> четырехзвездночный отель</p>
+              <div class="hotel-stars hotel-stars-4">
+                <span class="visually-hidden">4 звезды</span>
               </div>
               <p class="hotel-rating">Рейтинг: 9,2</p>
             </div>
@@ -245,8 +269,8 @@
               </a>
               <a class="hotel-card-favorite-button button" href="#">В избранное
               </a>
-              <div class="hotel-rating-stars">
-                <p class="visually-hidden"> трехзвездночный отель</p>
+              <div class="hotel-stars hotel-stars-3">
+                <span class="visually-hidden">3 звезды</span>
               </div>
               <p class="hotel-rating">Рейтинг: 6,9</p>
             </div>
@@ -264,18 +288,19 @@
               </a>
               <a class="hotel-card-favorite-button button" href="#">В избранное
               </a>
-              <div class="hotel-rating-stars">
-                <p class="visually-hidden"> двухзвездночный отель</p>
+              <div class="hotel-stars hotel-stars-2">
+                <span class="visually-hidden">2 звезды</span>
               </div>
               <p class="hotel-rating">Рейтинг: 5,0</p>
             </div>
           </li>
         </ul>
+        <hr>
 
         <!--Пагинация-->
-        <ul class="pagination pagination-current">
+        <ul class="pagination ">
           <li class="pagination-item">
-            <a class="pagination-link pagination-background" href="#">1
+            <a class="pagination-link pagination-current">1
             </a>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2
@@ -287,7 +312,7 @@
             <a class="pagination-link" href="#">4
             </a>
           <li class="pagination-item">
-            <a class="pagination-link pagination-link-ellipsis" href="#">...
+            <a class="pagination-link pagination-link-ellipsis">...
             </a>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10
