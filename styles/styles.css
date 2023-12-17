@@ -826,7 +826,6 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .control:hover {
-  border-color: #83B3D3;
   opacity: 0.6;
 }
 
@@ -834,13 +833,17 @@ li.infrastructure-item.infrastructure-item-color {
   opacity: 0.3;
 }
 
-
 .control-input:disabled + .control-mark {
   border-color: #242424;
 }
 
-.control-input:focus + .control-mark {
-  outline: 3px solid #83B3D3;
+/*.control-input:focus + .control-mark {*/
+/*  outline: 3px solid #83B3D3;*/
+/*}*/
+
+.control-input:active + .control-mark {
+  background-color: transparent;
+
 }
 
 /* radio */
