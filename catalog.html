@@ -86,6 +86,8 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:
               </legend>
+
+              <!--   check  -->
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -111,28 +113,29 @@
               </ul>
             </fieldset>
 
+            <!--  radio  -->
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:
               </legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class=" control-input" type="radio" name="housing-type" checked>
-
+                    <input class="visually-hidden control-input" type="radio" name="housing-type" checked>
+                    <span class="control-mark"></span>
                     <span class="control-label">Гостиницы</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-type">
-
+                    <input class="visually-hidden control-input" type="radio" name="housing-type">
+                    <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-type">
-
+                    <input class="visually-hidden control-input" type="radio" name="housing-type">
+                    <span class="control-mark"></span>
                     <span class="control-label">Аппартаменты</span>
                   </label>
                 </li>
@@ -144,11 +147,13 @@
               <legend class="catalog-filter-title">Стоимость,₽:
               </legend>
               <div class="range-wrapper-inputs">
-                <label class="catalog-filter-label">
-                  <input class="range-input" type="number" value="0" name="min-price"> от
+                <label class="range-from_input_text">
+                  <input class="range-from_input" type="number" value="0" name="min-price">
+                  <span>от</span>
                 </label>
-                <label class="catalog-filter-label">
-                  <input class="range-input" type="number" value="9000" name="max-price"> до
+                <label class="range-to_input_text">
+                  <input class="range-to_input" type="number" value="9000" name="max-price">
+                  <span>до</span>
                 </label>
               </div>
               <div class="range">
