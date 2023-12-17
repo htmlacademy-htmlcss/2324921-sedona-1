@@ -59,6 +59,7 @@ body {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .button-here {
@@ -613,14 +614,15 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .input-field:focus {
-  border: 2px solid #000;
-  background: #E6E6E6;
+  border: 3px solid #83B3D3;
 }
 
 .input-field:active {
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
+  border: 3px solid #000;
 }
+
+
 
 /*Подвал*/
 .page-footer {
@@ -658,6 +660,7 @@ li.infrastructure-item.infrastructure-item-color {
   color: #83B3D3;
   height: 40px;
   background-color: #FFF;
+  outline: none;
 }
 
 .footer-social-item {
@@ -696,6 +699,7 @@ li.infrastructure-item.infrastructure-item-color {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  outline: none;
 }
 
 .footer-contacts-address-phone:hover {
@@ -717,6 +721,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 .webdeveloper-logo-link {
   color: #000000;
+  outline: none;
 }
 
 .webdeveloper-logo-link:hover {
@@ -795,12 +800,63 @@ li.infrastructure-item.infrastructure-item-color {
   gap: 70px;
 }
 
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-title {
+  margin-bottom: 32px;
+  padding: 0;
+}
+
 .catalog-filter-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+/*control*/
+.control {
+  position: relative;
+  display: block;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  border-radius: 4px;
+  background-color: #FFF;
+  /*border: 2px solid #3F5E72;*/
 
 }
+
+.control-label {
+  padding-left: 36px;
+}
+
+.control:hover {
+  border-color: #83B3D3;
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:focus .control-mark {
+  border-color: #83B3D3;
+  /*border: 2px solid #3F5E72;*/
+
+}
+
+.control-input:disabled + .control-mark {
+  border-color: #242424;
+}
+
 
 .filter-button {
   display: grid;
@@ -874,7 +930,8 @@ li.infrastructure-item.infrastructure-item-color {
   background-image: url("/images/icons/catalogpage-simbols/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  background-color: #F2F2F2;
+  outline: none;
+  /*background-color: #F2F2F2;*/
 }
 
 .select-control:hover {
@@ -971,6 +1028,7 @@ li.infrastructure-item.infrastructure-item-color {
   padding: 0;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  outline: none;
 }
 
 .card-grid-toggle-current {
@@ -1091,6 +1149,8 @@ hr {
   color: #ffffff;
   border-radius: 4px;
   background: #82B3D3;
+  outline: none;
+
 }
 
 .pagination-link-ellipsis {
@@ -1118,7 +1178,7 @@ hr {
 .pagination-link:active {
   border-radius: 4px;
   background: #82B3D3;
-}
+  color: rgba(255, 255, 255, 0.3);}
 
 .pagination-current:hover {
   background: #F2F2F2;
