@@ -246,5 +246,43 @@
     </div>
   </footer>
 </div>
+<div class="modal-container">
+  <div class="modal modal-auth">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+    <section class="modal-content">
+      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group">
+          <label class="auth-form-data__in" for="auth-form__in">Дата заезда:
+          </label>
+          <input class="auth-form-field field" type="text" id="auth-form__in" name="select-date"
+                 placeholder="Укажите дату">
+        </p>
+        <span>Мы не можем отправить вас в прошлое.</span>
+        <p class="field-group">
+          <label class="auth-form-data__out" for="auth-form__out">Дата выезда:
+          </label>
+          <input class="auth-form-field field" type="text" id="auth-form__out" name="select-date"
+                 placeholder="Укажите дату">
+        </p>
+        <span>На эти даты есть свободные номера. Пока есть.</span>
+        <p class="field-group">
+          <label class="auth-form-adults__guests" for="auth-form__adults">Взрослые:
+          </label>
+          <input class="auth-form-field field" type="number" id="auth-form__adults" name="quantity">
+        </p>
+        <p class="field-group">
+          <label class="auth-form-children__guests" for="auth-form__children">Дети:
+          </label>
+          <input class="auth-form-field field" type="number" id="auth-form__children" name="quantity">
+        </p>
+        <button class="button auth-form-button" type="submit">Найти
+        </button>
+      </form>
+    </section>
+  </div>
+</div>
 </body>
 </html>
