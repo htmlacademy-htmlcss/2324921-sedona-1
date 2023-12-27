@@ -753,8 +753,7 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .modal-auth {
-  width: 717px;
-  min-height: 448px;
+  width: 577px;
 }
 
 .modal-close-button {
@@ -786,13 +785,86 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .modal-content {
-  display: grid;
-  width: 577px;
-  grid-template-columns: 137px 198px 130px 113px;
-  grid-template-rows: repeat(3, 48px) ;
-  gap: 48px;
 }
 
+.auth-form {
+  display: grid;
+  width: 577px;
+  grid-template-columns: 120px 165px 130px 116px;
+  grid-template-rows: repeat(3, 48px);
+  gap: 48px 18px;
+
+}
+
+.auth-form-data__in {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.auth-form-field__in {
+  position: relative;
+  grid-column: 2/5;
+  grid-row: 1/2;
+}
+
+.auth-form-data__out {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.auth-form-field__out {
+  width: 440px;
+  grid-column: 2/5;
+  grid-row: 2/3;
+}
+
+.auth-form-button {
+  grid-column: 1/5;
+  grid-row: 4/5;
+}
+
+.message-error__current {
+  position: absolute;
+  right: 290px;
+  top: 215px;
+  color: #FF5757;
+}
+
+.message-error {
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.message-error__position {
+  position: absolute;
+  right: 235px;
+  top: 310px;
+}
+
+.form-label {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.auth-form-field__guests {
+  width: 110px;
+}
+
+.auth-form-children__guests {
+  position: relative;
+}
+
+.tooltip-toggle {
+  position: relative;
+  right: 90px;
+}
 
 /*  Каталог  */
 .inner-header {
