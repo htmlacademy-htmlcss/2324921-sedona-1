@@ -257,23 +257,30 @@
 
     <section class="modal-content">
       <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="form-label auth-form-data__in" for="auth-form__in">Дата заезда:
+        <!--    Дата заезда    -->
+        <label class="form-label" for="auth-form__in">Дата заезда:
         </label>
-        <input class="auth-form-field__in field" type="text" id="auth-form__in" name="select-date"
+        <input class="auth-field auth-form-field__in " type="text" id="auth-form__in" name="select-date"
+               value="27 апреля 2020"
                placeholder="Укажите дату">
         <span class="message-error message-error__current">Мы не можем отправить вас в прошлое.</span>
-        <label class="form-label auth-form-data__out" for="auth-form__out">Дата выезда:
+        <!--    Дата выезда    -->
+        <label class="form-label" for="auth-form__out">Дата выезда:
         </label>
-        <input class="auth-form-field__out field" type="text" id="auth-form__out" name="select-date"
+        <input class="auth-field auth-form-field__out" type="text" id="auth-form__out" name="select-date"
+               value="1 сентября 2023"
                placeholder="Укажите дату">
         <span class="message-error message-error__position">На эти даты есть свободные номера. Пока есть.</span>
-        <label class="form-label auth-form-adults__guests" for="auth-form__adults">Взрослые:
+        <!--   Взрослые     -->
+        <label class="form-label" for="auth-form__adults">Взрослые:
         </label>
-        <input class="auth-form-field__guests field" type="number" id="auth-form__adults" value="2" name="quantity">
-        <label class="form-label auth-form-children__guests" for="auth-form__children">Дети:
-        </label>
-        <input class="auth-form-field__guests field" type="number" id="auth-form__children" value="2" name="quantity">
-        <span class="tooltip">
+        <input class="auth-field auth-field__adults" type="number" id="auth-form__adults" value="2"
+               name="quantity">
+        <!--   Дети     -->
+        <p class="field-group auth-form-children__guests">
+          <label class="form-label" for="auth-form__children">Дети:
+          </label>
+          <span class="tooltip">
             <button class="tooltip-toggle" type="button">
               <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -283,8 +290,10 @@
             <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которыхот 6 до 18 лет.
               Дети до 6 лет размещаются бесплатно.
             </span>
-
-        </span>
+          </span>
+          <input class="auth-field auth-field__children" type="number" id="auth-form__children" value="2"
+                 name="quantity">
+        </p>
         <button class="button auth-form-button" type="submit">Найти
         </button>
       </form>
