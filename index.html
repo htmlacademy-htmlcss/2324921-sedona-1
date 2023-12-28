@@ -274,10 +274,14 @@
         <!--   Взрослые     -->
         <label class="form-label" for="auth-form__adults">Взрослые:
         </label>
-        <input class="auth-field auth-field__adults" type="number" id="auth-form__adults" value="2"
-               name="quantity">
+        <div class="auth-field__adults-wrapper">
+          <input class="auth-field auth-field__adults" type="number" id="auth-form__adults" value="2"
+                 name="quantity">
+          <span class="auth-field__adults-plus"></span>
+          <span class="auth-field__adults-minus"></span>
+        </div>
         <!--   Дети     -->
-        <p class="field-group auth-form-children__guests">
+        <div class="auth-form-children__guests-wrapper">
           <label class="form-label" for="auth-form__children">Дети:
           </label>
           <!--    Тултип      -->
@@ -292,9 +296,13 @@
               Дети<br> до 6 лет размещаются бесплатно.
             </span>
           </span>
-        </p>
-        <input class="auth-field auth-field__children" type="number" id="auth-form__children" value="2"
-               name="quantity">
+        </div>
+        <div class="auth-field__children-wrapper">
+          <input class="auth-field auth-field__children" type="number" id="auth-form__children" value="2"
+                 name="quantity">
+          <span class="auth-field__children-plus"></span>
+          <span class="auth-field__children-minus"></span>
+        </div>
         <!--    Кнопка    -->
         <button class="button auth-form-button" type="submit">Найти
         </button>

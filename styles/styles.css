@@ -749,7 +749,7 @@ li.infrastructure-item.infrastructure-item-color {
   padding: 64px 70px;
   border-radius: 30px;
   background: #FFF;
-  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-auth {
@@ -824,7 +824,6 @@ li.infrastructure-item.infrastructure-item-color {
   border: none;
 }
 
-
 .auth-form-data__in,
 .auth-form-data__out {
   grid-column: 1/2;
@@ -840,6 +839,7 @@ li.infrastructure-item.infrastructure-item-color {
   border-radius: 10px;
 }
 
+/*  Сообщение об ошибке  */
 .message-error__current {
   position: absolute;
   right: 210px;
@@ -868,21 +868,65 @@ li.infrastructure-item.infrastructure-item-color {
   text-transform: capitalize;
 }
 
-.auth-field__adults {
+.auth-field__adults-wrapper,
+.auth-field__children-wrapper {
+  position: relative;
   width: 110px;
-  height: 48px;
-  padding: 0;
+}
+
+.auth-field__adults {
+  width: 36px;
+  height: 24px;
+  padding: 12px 40px;
   grid-column: 2/3;
   text-align: center;
 }
 
+.auth-field__adults-plus,
+.auth-field__children-plus {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 18px;
+  right: 14px;
+  background-image: url("../images/icons/catalogpage-simbols/plus.svg");
+}
+
+.auth-field__adults-minus,
+.auth-field__children-minus {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  top: 24px;
+  left: 14px;
+  background-image: url("../images/icons/catalogpage-simbols/minus.svg");
+}
+
+ {
+  position: relative;
+}
+
+.auth-field__children__plus {
+
+}
+
+.auth-field__children__minus {
+
+}
+
 .auth-field__children {
-  padding: 0;
-  grid-column: 4/5;
+  width: 36px;
+  height: 24px;
+  padding: 12px 40px;
   text-align: center;
 }
 
-.auth-form-children__guests {
+
+.auth-form-children__guests__plus-minus {
+
+}
+
+.auth-form-children__guests-wrapper {
   display: flex;
   margin: 0;
 }
@@ -908,6 +952,15 @@ li.infrastructure-item.infrastructure-item-color {
   margin: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.tooltip-toggle:hover {
+  opacity: 0.8;
+}
+
+.tooltip-toggle:active {
+  opacity: 0.6;
 }
 
 .tooltip-text {
@@ -928,14 +981,16 @@ li.infrastructure-item.infrastructure-item-color {
   box-shadow: 0 15px 30px 0 #BFBFBF;
 }
 
-.auth-field__adults::-webkit-outer-spin-button,
-.auth-field__adults::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+/*  Убираем стрелки в input  */
+
+/*  Для браузера Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-.auth-field__children::-webkit-outer-spin-button,
-.auth-field__children::-webkit-inner-spin-button {
+/*   Для других браузеров */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1169,18 +1224,6 @@ li.infrastructure-item.infrastructure-item-color {
   background: #F2F2F2;
   border: none;
   outline: none;
-}
-
-.range-input-price__from::-webkit-outer-spin-button,
-.range-input-price__from::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
-.range-input-price__to::-webkit-outer-spin-button,
-.range-input-price__to::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 .range-input-price__from:hover,
