@@ -798,7 +798,7 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .modal-content {
-
+position: relative;
 }
 
 .auth-form {
@@ -824,14 +824,31 @@ li.infrastructure-item.infrastructure-item-color {
   border: none;
 }
 
-.auth-form-data__in,
-.auth-form-data__out {
-  grid-column: 1/2;
-}
-
 .auth-form-field__in,
 .auth-form-field__out {
   grid-column: 2/5;
+}
+
+/*  Иконка заезда  */
+.auth-icon__in {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 16px;
+  right: 16px;
+  opacity: 0.2;
+  background-image: url("../images/icons/catalogpage-simbols/departure.svg");
+}
+
+/*  Иконка выезда */
+.auth-icon__out {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 112px;
+  right: 16px;
+  opacity: 0.2;
+  background-image: url("../images/icons/catalogpage-simbols/departure.svg");
 }
 
 .auth-form-button {
@@ -839,11 +856,11 @@ li.infrastructure-item.infrastructure-item-color {
   border-radius: 10px;
 }
 
-/*  Сообщение об ошибке  */
+/*  Сообщения об ошибке  */
 .message-error__current {
   position: absolute;
-  right: 210px;
-  top: 215px;
+  right: 157px;
+  top: 52px;
   color: #FF5757;
 }
 
@@ -856,8 +873,8 @@ li.infrastructure-item.infrastructure-item-color {
 
 .message-error__position {
   position: absolute;
-  right: 160px;
-  top: 310px;
+  right: 106px;
+  top: 148px;
 }
 
 .form-label {
@@ -866,6 +883,11 @@ li.infrastructure-item.infrastructure-item-color {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+}
+
+.auth-form-children__guests-wrapper {
+  display: flex;
+  margin: 0;
 }
 
 .auth-field__adults-wrapper,
@@ -902,18 +924,6 @@ li.infrastructure-item.infrastructure-item-color {
   background-image: url("../images/icons/catalogpage-simbols/minus.svg");
 }
 
- {
-  position: relative;
-}
-
-.auth-field__children__plus {
-
-}
-
-.auth-field__children__minus {
-
-}
-
 .auth-field__children {
   width: 36px;
   height: 24px;
@@ -921,15 +931,6 @@ li.infrastructure-item.infrastructure-item-color {
   text-align: center;
 }
 
-
-.auth-form-children__guests__plus-minus {
-
-}
-
-.auth-form-children__guests-wrapper {
-  display: flex;
-  margin: 0;
-}
 
 /*  tooltip  */
 .tooltip {
@@ -964,8 +965,8 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .tooltip-text {
-  width: 216px;
   position: relative;
+  width: 216px;
   top: 25px;
   right: 50px;
   background-color: #333333;
@@ -981,8 +982,16 @@ li.infrastructure-item.infrastructure-item-color {
   box-shadow: 0 15px 30px 0 #BFBFBF;
 }
 
-/*  Убираем стрелки в input  */
+.tooltip-arrow {
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  top: 46px;
+  left: 64px;
+  background-image: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");
+}
 
+/*  Убираем стрелки в input-ах  */
 /*  Для браузера Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
