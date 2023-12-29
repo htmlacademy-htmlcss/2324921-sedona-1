@@ -778,7 +778,7 @@ li.infrastructure-item.infrastructure-item-color {
   padding: 64px 70px;
   border-radius: 30px;
   background: #FFFFFF;
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.30);
 }
 
 .modal-auth {
@@ -832,7 +832,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 .auth-form {
   display: grid;
-  grid-template-columns: 120px 161px 130px 116px;
+  grid-template-columns: 120px 198px 130px 116px;
   gap: 48px 18px;
 }
 
@@ -885,7 +885,7 @@ li.infrastructure-item.infrastructure-item-color {
 /*  Сообщения об ошибке  */
 .message-error__current {
   position: absolute;
-  right: 157px;
+  right: 180px;
   top: 52px;
   color: #FF5757;
 }
@@ -899,7 +899,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 .message-error__position {
   position: absolute;
-  right: 106px;
+  right: 128px;
   top: 148px;
 }
 
@@ -996,13 +996,13 @@ li.infrastructure-item.infrastructure-item-color {
 
 .tooltip-text {
   position: relative;
-  width: 216px;
+  width: 220px;
   top: 25px;
-  right: 50px;
+  right: 55px;
   background-color: #333333;
   color: #FFFFFF;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 15px 20px 20px 22px;
   display: block;
   font-size: 16px;
   font-style: normal;
