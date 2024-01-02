@@ -249,70 +249,65 @@
 
 <!--  Модальное окно  -->
 <div class="modal-container modal-container-close">
-  <div class="modal modal-auth">
+  <section class="modal modal-auth">
     <button class="modal-close-button">
       <span class="visually-hidden">Закрыть</span>
     </button>
     <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
-    <section class="modal-content">
-      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-        <!--    Дата заезда    -->
-        <label class="form-label" for="auth-form__in">Дата заезда:
-        </label>
-        <input class="auth-field auth-form-field__in " type="text" id="auth-form__in" name="select-date"
+    <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+      <!--    Дата заезда    -->
+      <label class="form-label" for="auth-form__in">Дата заезда:
+      </label>
+      <div class="auth-field-wrapper">
+        <input class="auth-field" type="text" id="auth-form__in" name="select-date"
                value="27 апреля 2020"
                placeholder="Укажите дату">
-        <span class="message-error message-error__current">Мы не можем отправить вас в прошлое.</span>
-        <span class="auth-icon__in"></span>
-        <!--    Дата выезда    -->
-        <label class="form-label" for="auth-form__out">Дата выезда:
-        </label>
-        <input class="auth-field auth-form-field__out" type="text" id="auth-form__out" name="select-date"
+        <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
+        <button class="auth-field-icon"></button>
+      </div>
+      <!--    Дата выезда    -->
+      <label class="form-label" for="auth-form__out">Дата выезда:
+      </label>
+      <div class="auth-field-wrapper">
+        <input class="auth-field" type="text" id="auth-form__out" name="select-date"
                value="1 сентября 2023"
                placeholder="Укажите дату">
-        <span class="message-error message-error__position">На эти даты есть свободные номера. Пока есть.</span>
-        <span class="auth-icon__out"></span>
-        <!--   Взрослые     -->
-        <label class="form-label" for="auth-form__adults">Взрослые:
+        <span class="message ">На эти даты есть свободные номера. Пока есть.</span>
+        <button class="auth-field-icon"></button>
+      </div>
+      <!--   Взрослые     -->
+      <label class="form-label" for="auth-form__adults">Взрослые:
+      </label>
+      <div class="auth-guests-wrapper">
+        <button class="auth-field__guests-minus"></button>
+        <input class="auth-field auth-field__guests" type="number" id="auth-form__adults" value="2"
+               name="quantity">
+        <button class="auth-field__guests-plus"></button>
+      </div>
+      <!--   Дети     -->
+      <!--    Тултип      -->
+      <div class="tooltip">
+        <label class="form-label" for="auth-form__children">Дети:
         </label>
-        <div class="auth-field__adults-wrapper">
-          <input class="auth-field auth-field__adults" type="number" id="auth-form__adults" value="2"
-                 name="quantity">
-          <span class="auth-field__adults-plus"></span>
-          <span class="auth-field__adults-minus"></span>
-        </div>
-        <!--   Дети     -->
-        <div class="auth-form-children__guests-wrapper">
-          <label class="form-label" for="auth-form__children">Дети:
-          </label>
-          <!--    Тултип      -->
-          <span class="tooltip">
-            <button class="tooltip-toggle" type="button">
-              <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
-              </svg>
-            </button>
-            <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+        <button class="tooltip-toggle tooltip-icon" type="button">
+        </button>
+        <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
               Дети<br> до 6 лет размещаются бесплатно.
             </span>
-            <span class="tooltip-arrow"></span>
-          </span>
-        </div>
-
-        <div class="auth-field__children-wrapper">
-          <input class="auth-field auth-field__children" type="number" id="auth-form__children" value="2"
-                 name="quantity">
-          <span class="auth-field__children-plus"></span>
-          <span class="auth-field__children-minus"></span>
-        </div>
-        <!--    Кнопка    -->
-        <button class="button auth-form-button" type="submit">Найти
-        </button>
-      </form>
-    </section>
-  </div>
+        <span class="tooltip-arrow"></span>
+      </div>
+      <div class="auth-guests-wrapper">
+        <button class="auth-field__guests-minus"></button>
+        <input class="auth-field auth-field__guests" type="number" id="auth-form__children" value="2"
+               name="quantity">
+        <button class="auth-field__guests-plus"></button>
+      </div>
+      <!--    Кнопка    -->
+      <button class="button auth-form-button" type="submit">Найти
+      </button>
+    </form>
+  </section>
 </div>
 </body>
 </html>

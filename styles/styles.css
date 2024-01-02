@@ -775,20 +775,20 @@ li.infrastructure-item.infrastructure-item-color {
 .modal {
   position: relative;
   margin: auto;
-  padding: 64px 70px;
+  padding: 68px 70px;
   border-radius: 30px;
   background: #FFFFFF;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.30);
 }
 
 .modal-auth {
-  /*width: 577px;*/
+  /*width: 620px;*/
 }
 
 .modal-close-button {
   position: absolute;
-  top: 64px;
-  right: 52px;
+  top: 67px;
+  right: 54px;
   width: 52px;
   height: 52px;
   border: none;
@@ -816,7 +816,8 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .modal-title {
-  font-size: 30px;
+  width: 560px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
@@ -832,16 +833,23 @@ li.infrastructure-item.infrastructure-item-color {
 
 .auth-form {
   display: grid;
-  grid-template-columns: 120px 198px 130px 116px;
+  grid-template-columns: 125px 196px 130px 116px;
   gap: 48px 18px;
 }
 
+.auth-field-wrapper {
+  height: 48px;
+  position: relative;
+  grid-column: 2/5;
+}
+
 .auth-field {
-  /*width: 403px;*/
+  width: 410px;
   padding: 12px 48px 12px 20px;
   background-color: #F2F2F2;
   color: #000000;
-  font-size: 18px;
+  font-family: inherit;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
@@ -850,31 +858,31 @@ li.infrastructure-item.infrastructure-item-color {
   border: none;
 }
 
-.auth-form-field__in,
-.auth-form-field__out {
-  grid-column: 2/5;
-}
 
 /*  Иконка даты заезда  */
-.auth-icon__in {
+.auth-field-icon {
   position: absolute;
   width: 16px;
   height: 15px;
   top: 16px;
-  right: 16px;
+  right: 20px;
   opacity: 0.2;
+  border: none;
+  padding: 0;
   background-image: url("../images/icons/catalogpage-simbols/departure.svg");
+  cursor: pointer;
 }
 
-/*  Иконка даты выезда */
-.auth-icon__out {
-  position: absolute;
-  width: 16px;
-  height: 15px;
-  top: 112px;
-  right: 16px;
+.auth-field-icon:hover {
+  opacity: 0.4;
+}
+
+.auth-field-icon:focus {
   opacity: 0.2;
-  background-image: url("../images/icons/catalogpage-simbols/departure.svg");
+}
+
+.auth-field-icon:active {
+  opacity: 0.3;
 }
 
 .auth-form-button {
@@ -883,30 +891,24 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 /*  Сообщения об ошибке  */
-.message-error__current {
-  position: absolute;
+.message-error {
   right: 180px;
   top: 52px;
   color: #FF5757;
 }
 
-.message-error {
+.message {
+  margin-left: 20px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
 }
 
-.message-error__position {
-  position: absolute;
-  right: 128px;
-  top: 148px;
-}
-
 .form-label {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -916,50 +918,44 @@ li.infrastructure-item.infrastructure-item-color {
   margin: 0;
 }
 
-.auth-field__adults-wrapper,
-.auth-field__children-wrapper {
-  position: relative;
+.auth-guests-wrapper {
+  display: flex;
   width: 110px;
+  position: relative;
 }
 
-.auth-field__adults {
-  width: 36px;
-  height: 24px;
-  padding: 12px 40px;
-  grid-column: 2/3;
-  text-align: center;
-}
-
-.auth-field__children {
+.auth-field__guests {
   width: 36px;
   height: 24px;
   padding: 12px 40px;
   text-align: center;
 }
 
-.auth-field__adults-plus,
-.auth-field__children-plus {
+.auth-field__guests-plus {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 18px;
-  right: 14px;
+  top: 17px;
+  right: 13px;
   background-image: url("../images/icons/catalogpage-simbols/plus.svg");
+  border: none;
+  cursor: pointer;
 }
 
-.auth-field__adults-minus,
-.auth-field__children-minus {
+.auth-field__guests-minus {
   position: absolute;
   width: 14px;
   height: 2px;
-  top: 24px;
-  left: 14px;
+  top: 23px;
+  left: 13px;
+  border: none;
   background-image: url("../images/icons/catalogpage-simbols/minus.svg");
 }
 
 /*  tooltip  */
 .tooltip {
-  position: absolute;
+  display: flex;
+  align-items: center;
 }
 
 .tooltip-icon {
@@ -970,16 +966,15 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .tooltip-toggle {
-  position: relative;
-  top: 12px;
-  left: 60px;
   display: block;
   padding: 0;
-  margin: 0;
+  margin-left: 10px;
   border: none;
-  background-color: transparent;
   cursor: pointer;
   outline: none;
+  background-image: url("../images/icons/catalogpage-simbols/tooltipinfo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .tooltip-toggle:hover {
@@ -995,9 +990,9 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .tooltip-text {
-  position: relative;
+  position: absolute;
   width: 220px;
-  top: 25px;
+  top: 100px;
   right: 55px;
   background-color: #333333;
   color: #FFFFFF;
