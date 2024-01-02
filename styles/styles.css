@@ -977,6 +977,12 @@ li.infrastructure-item.infrastructure-item-color {
   background-repeat: no-repeat;
 }
 
+.tooltip-toggle::after {
+  position: relative;
+  top: 25px;
+  content: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");
+}
+
 .tooltip-toggle:hover {
   opacity: 0.8;
 }
@@ -992,12 +998,12 @@ li.infrastructure-item.infrastructure-item-color {
 .tooltip-text {
   position: absolute;
   width: 220px;
-  top: 100px;
-  right: 55px;
+  bottom: 30px;
+  right: 130px;
   background-color: #333333;
   color: #FFFFFF;
   text-transform: none;
-  padding: 15px 20px 20px 22px;
+  padding: 15px 18px 18px 22px;
   display: block;
   font-size: 16px;
   font-style: normal;
@@ -1007,13 +1013,14 @@ li.infrastructure-item.infrastructure-item-color {
   box-shadow: 0 15px 30px 0 #BFBFBF;
 }
 
-.tooltip-arrow {
-  position: absolute;
-  width: 19px;
-  height: 9px;
-  top: 46px;
-  left: 64px;
-  background-image: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");
+/*.tooltip-text::before {*/
+/*  position: absolute;*/
+/*  content: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");*/
+  /*width: 19px;*/
+  /*height: 9px;*/
+  /*top: 46px;*/
+  /*left: 64px;*/
+  /*background-image: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");*/
 }
 
 /*  Убираем стрелки в input-ах  */
