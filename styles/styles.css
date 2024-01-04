@@ -931,25 +931,49 @@ li.infrastructure-item.infrastructure-item-color {
   text-align: center;
 }
 
-.auth-field__guests-plus {
+.auth-field-plus {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 17px;
-  right: 13px;
+  top: 4px;
+  right: 0;
+  padding: 20px 15px;
   background-image: url("../images/icons/catalogpage-simbols/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.auth-field__guests-minus {
+.auth-field-minus {
   position: absolute;
   width: 14px;
-  height: 2px;
-  top: 23px;
-  left: 13px;
+  height: 14px;
+  top: 4px;
+  left: 0;
+  padding: 20px 15px;
   border: none;
   background-image: url("../images/icons/catalogpage-simbols/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.auth-field-plus:hover,
+.auth-field-minus:hover {
+  opacity: 0.8;
+}
+
+.auth-field-plus:focus,
+.auth-field-minus:focus {
+  opacity: 0.6;
+}
+
+.auth-field-plus:active,
+.auth-field-minus:active {
+  opacity: 0.4;
 }
 
 /*  tooltip  */
@@ -1016,12 +1040,12 @@ li.infrastructure-item.infrastructure-item-color {
 /*.tooltip-text::before {*/
 /*  position: absolute;*/
 /*  content: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");*/
-  /*width: 19px;*/
-  /*height: 9px;*/
-  /*top: 46px;*/
-  /*left: 64px;*/
-  /*background-image: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");*/
-}
+/*width: 19px;*/
+/*height: 9px;*/
+/*top: 46px;*/
+/*left: 64px;*/
+/*background-image: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");*/
+/*}*/
 
 /*  Убираем стрелки в input-ах  */
 /*  Для браузера Firefox */
