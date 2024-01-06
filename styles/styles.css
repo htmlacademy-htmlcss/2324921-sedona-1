@@ -888,7 +888,7 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .auth-form-button {
-  height: 68px;
+  height: 65px;
   grid-column: 1/5;
   border-radius: 10px;
 }
@@ -1024,6 +1024,8 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .tooltip-text {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   min-width: 227px;
   top: 54px;
@@ -1031,12 +1033,15 @@ li.infrastructure-item.infrastructure-item-color {
   background-color: #333333;
   color: #FFFFFF;
   text-transform: none;
-  padding: 20px 18px 23px 22px;
-  display: block;
+  padding: 0 18px 22px 22px;
+  /*padding: 25px 18px 23px 22px;*/
+  /*display: block;*/
+  /*font-size: 16px;*/
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 21px;
+  /*line-height: 20px;*/
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 #BFBFBF;
   z-index: 1;
@@ -1044,8 +1049,9 @@ li.infrastructure-item.infrastructure-item-color {
 
 .tooltip-text::before {
   position: relative;
-  bottom: 36px;
-  left: 100px;
+  /*bottom: 41px;*/
+  bottom: 16px;
+  left: 101px;
   content: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");
 }
 
