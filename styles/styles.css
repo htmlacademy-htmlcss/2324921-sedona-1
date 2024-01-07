@@ -909,12 +909,17 @@ li.infrastructure-item.infrastructure-item-color {
   line-height: 21px;
 }
 
+/*  label  */
 .form-label {
   display: flex;
   align-items: center;
   font-size: 21px;
   font-weight: 700;
   text-transform: capitalize;
+}
+
+.form-label-icon {
+  position: relative;
 }
 
 .auth-form-children__guests-wrapper {
@@ -987,9 +992,12 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .tooltip {
-  position: relative;
-  display: flex;
-  align-items: center;
+  /*position: relative;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 62px;
 }
 
 .tooltip-icon {
@@ -1002,13 +1010,10 @@ li.infrastructure-item.infrastructure-item-color {
 .tooltip-toggle {
   display: block;
   padding: 0;
-  margin-left: 11px;
+  /*margin-left: 11px;*/
   border: none;
-  cursor: pointer;
-  outline: none;
   background-image: url("../images/icons/catalogpage-simbols/tooltipinfo.svg");
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .tooltip-toggle:hover {
@@ -1028,29 +1033,35 @@ li.infrastructure-item.infrastructure-item-color {
   flex-direction: column;
   position: absolute;
   min-width: 227px;
-  top: 54px;
-  left: -109px;
+  top: 42px;
+  left: -119px;
   background-color: #333333;
   color: #FFFFFF;
   text-transform: none;
-  padding: 0 18px 22px 22px;
-  /*padding: 25px 18px 23px 22px;*/
+  padding: 11px 18px 22px 22px;
+  /*  Значения при display:block;  */
   /*display: block;*/
+  /*padding: 25px 18px 23px 22px;*/
   /*font-size: 16px;*/
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  /*line-height: 20px;*/
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 #BFBFBF;
   z-index: 1;
+  /*display: none;*/
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .tooltip-text::before {
   position: relative;
   /*bottom: 41px;*/
-  bottom: 16px;
+  bottom: 28px;
   left: 101px;
   content: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");
 }
