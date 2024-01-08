@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 
 <body>
@@ -63,9 +64,9 @@
         <section class="advantages-container">
           <h2 class="visually-hidden"> Преимущества</h2>
           <div class="advantages-intro-wrapper">
-            <h3 class="advantages-intro-title">Седона-небольшой городок в Аризоне, заслуживающий большего!
+            <h3 class="advantages-intro-title">Седона — небольшой городок в Аризоне, заслуживающий большего!
             </h3>
-            <p class="advantages-intro-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон.
+            <p class="advantages-intro-description">Рассмотрим причины, по которым Седона круче чем Гранд-Каньон!
             </p>
           </div>
         </section>
@@ -73,7 +74,7 @@
         <ul class="advantages-list-town">
           <li class="advantages-item">
             <h4 class="advantages-title advantages-title-current"> Настоящий <br/>городок</h4>
-            <p class="advantages-description">Седона-не аттракцион для туристов, там течет своя жизнь
+            <p class="advantages-description">Седона — не аттракцион для туристов, там течет своя жизнь
             </p>
           </li>
           <li class="advantages-img">
@@ -102,7 +103,7 @@
         <ul class="advantages-list-bridge advantages-list-reverse">
           <li class="advantages-item-bridge">
             <h4 class="advantages-title advantages-title-current"> Там есть <br/> мост дьявола</h4>
-            <p class="advantages-description">Да! По нему можно пройти! Если вы осмелитесь, разумеется
+            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </li>
           <li class="advantages-img-bridge">
@@ -126,7 +127,7 @@
         <!--Список для инфраструктуры-->
         <ul class="infrastructure-services-list">
           <li class="infrastructure-item infrastructure-item-icon-housing">
-            <h4 class="infrastructure-title ">Жилье</h4>
+            <h4 class="infrastructure-title ">Жильё</h4>
             <p class="infrastructure-description">Рекомендуем пожить <br/> в настоящем мотеле,<br/>все как в кино!
             </p>
           </li>
@@ -150,7 +151,7 @@
         <div class="search-wrapper">
           <h3 class="search-title">Заинтересовались?
           </h3>
-          <p class="search-description">Укажите предпологаемые даты поездки,<br/>и мы покажем вам лучшие
+          <p class="search-description">Укажите предполагаемые даты поездки,<br/>и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <a class="button button-search" href="#">Поиск гостиницы в Седоне
@@ -164,7 +165,7 @@
         <div class="subscription-wrapper">
           <h3 class="subscription-title">Подпишитесь на рассылку
           </h3>
-          <p class="subscription-description"> Только полезная информация и кикакого спама, <br/>честное бойскаутское!
+          <p class="subscription-description"> Только полезная информация и никакого спама, <br/>честное бойскаутское!
           </p>
           <form class="newsletter-form newsletter-form-wrapper " action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
@@ -211,7 +212,7 @@
         </li>
       </ul>
       <div class="footer-phone-wrapper">
-        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812 12 12
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12
         </a>
       </div>
       <div class="webdeveloper-wrapper">
@@ -245,6 +246,70 @@
       </div>
     </div>
   </footer>
+</div>
+
+<!--  Модальное окно  -->
+<div class="modal-container modal-container-close">
+  <section class="modal modal-auth">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+    <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+      <!--    Дата заезда    -->
+      <label class="form-label" for="auth-form__in">Дата заезда:
+      </label>
+      <div class="auth-field-wrapper">
+        <input class="auth-field" type="text" id="auth-form__in" name="select-date"
+               value="27 апреля 2020"
+               placeholder="Укажите дату">
+        <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
+        <button class="auth-field-icon"></button>
+      </div>
+      <!--    Дата выезда    -->
+      <label class="form-label" for="auth-form__out">Дата выезда:
+      </label>
+      <div class="auth-field-wrapper">
+        <input class="auth-field" type="text" id="auth-form__out" name="select-date"
+               value="1 сентября 2023"
+               placeholder="Укажите дату">
+        <span class="message ">На эти даты есть свободные номера. Пока есть.</span>
+        <button class="auth-field-icon"></button>
+      </div>
+      <!--   Взрослые     -->
+      <label class="form-label" for="auth-form__adults">Взрослые:
+      </label>
+      <div class="auth-guests-wrapper">
+        <button class="auth-field-minus" type="button"></button>
+        <input class="auth-field auth-field__guests" type="number" id="auth-form__adults" value="2"
+               name="quantity">
+        <button class="auth-field-plus" type="button"></button>
+      </div>
+      <!--   Дети     -->
+      <div class="tooltip-wrapper">
+          <label class="form-label" for="auth-form__children">Дети:
+          </label>
+        <!--    Тултип      -->
+        <span class="tooltip">
+        <button class="tooltip-toggle tooltip-icon" type="button">
+        </button>
+        <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+              Дети<br>до 6 лет размещаются бесплатно.
+            </span>
+      </span>
+      </div>
+      <div class="auth-guests-wrapper">
+        <button class="auth-field-minus" type="button"></button>
+        <input class="auth-field auth-field__guests" type="number" id="auth-form__children" value="2"
+               name="quantity">
+        <button class="auth-field-plus" type="button"></button>
+      </div>
+      <!--    Кнопка    -->
+      <button class="button auth-form-button" type="submit">Найти
+      </button>
+    </form>
+  </section>
 </div>
 </body>
 </html>
