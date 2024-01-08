@@ -944,9 +944,9 @@ li.infrastructure-item.infrastructure-item-color {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 4px;
+  top: 9px;
   right: 0;
-  padding: 20px 15px;
+  padding: 15px 15px;
   background-image: url("../images/icons/catalogpage-simbols/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -959,9 +959,9 @@ li.infrastructure-item.infrastructure-item-color {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 4px;
+  top: 9px;
   left: 5px;
-  padding: 20px 15px;
+  padding: 15px 15px;
   border: none;
   background-image: url("../images/icons/catalogpage-simbols/minus.svg");
   background-repeat: no-repeat;
@@ -970,19 +970,24 @@ li.infrastructure-item.infrastructure-item-color {
   cursor: pointer;
 }
 
-.auth-field-plus:hover,
+.auth-field-plus:hover {
+  color: #000000;
+  background-image: url("../images/icons/catalogpage-simbols/vector-plus.svg");
+}
+
 .auth-field-minus:hover {
-  opacity: 0.8;
+  background-image: url("../images/icons/catalogpage-simbols/vector-minus.svg");
+
 }
 
 .auth-field-plus:focus,
 .auth-field-minus:focus {
-  opacity: 0.6;
+  outline-color: #82B3D3;
 }
 
 .auth-field-plus:active,
 .auth-field-minus:active {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 /*  tooltip  */
@@ -1020,17 +1025,8 @@ li.infrastructure-item.infrastructure-item-color {
   opacity: 0.8;
 }
 
-.tooltip-toggle:focus {
-  opacity: 0.7
-}
-
-.tooltip-toggle:active {
-  opacity: 0.6;
-}
 
 .tooltip-text {
-  display: flex;
-  flex-direction: column;
   position: absolute;
   min-width: 227px;
   top: 42px;
@@ -1038,11 +1034,7 @@ li.infrastructure-item.infrastructure-item-color {
   background-color: #333333;
   color: #FFFFFF;
   text-transform: none;
-  padding: 11px 18px 22px 22px;
-  /*  Значения при display:block;  */
-  /*display: block;*/
-  /*padding: 25px 18px 23px 22px;*/
-  /*font-size: 16px;*/
+  padding: 22px 18px 22px 22px;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -1050,7 +1042,7 @@ li.infrastructure-item.infrastructure-item-color {
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 #BFBFBF;
   z-index: 1;
-  /*display: none;*/
+  display: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1058,12 +1050,11 @@ li.infrastructure-item.infrastructure-item-color {
   display: block;
 }
 
-.tooltip-text::before {
-  position: relative;
-  /*bottom: 41px;*/
-  bottom: 28px;
-  left: 101px;
-  content: url("../images/icons/catalogpage-simbols/tooltiparrow.svg");
+.tooltip-text::after {
+  position: absolute;
+  top: -16px;
+  right: 47%;
+  content: url(../images/icons/catalogpage-simbols/tooltiparrow.svg);
 }
 
 /*  Убираем стрелки в input-ах  */
