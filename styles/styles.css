@@ -210,6 +210,7 @@ body {
 
 .navigation-user-list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -323,19 +324,10 @@ body {
 }
 
 .advantages-list-town,
-.advantages-dignities-list {
-  display: grid;
-  grid-template-columns:repeat(3, 400px);
-  grid-template-rows: 383px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
+.advantages-dignities-list,
 .advantages-list-bridge {
   display: grid;
   grid-template-columns:repeat(3, 400px);
-  grid-template-rows: 373px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -348,14 +340,15 @@ body {
 .advantages-item-bridge {
   grid-column: 3/4;
   width: 230px;
-  min-height: 179px;
+  min-height: 180px;
   background-color: #82B3D3;
   color: #FFFFFF;
   text-align: center;
-  padding: 103px 85px;
+  padding: 102px 85px;
 }
 
 .advantages-img-bridge {
+  display: flex;
   grid-row: 1/2;
 }
 
@@ -391,7 +384,7 @@ body {
   background-color: #82B3D3;
   color: #FFFFFF;
   text-align: center;
-  padding: 103px 85px;
+  padding: 102px 85px;
 }
 
 .advantages-description {
@@ -420,7 +413,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 230px;
-  min-height: 190px;
+  min-height: 188px;
   margin: 0 auto;
   text-align: center;
   color: #000000;
@@ -434,9 +427,7 @@ body {
 
 /* Инфраструктура */
 .infrastructure-container {
-  /*padding: 67px 0;*/
-  padding: 71px 0;
-
+  padding: 63px 0;
 }
 
 .infrastructure-intro-wrapper {
@@ -513,7 +504,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 /*Поиск гостиниц*/
 .search {
-  padding: 94px 304px;
+  padding: 96px 304px;
 }
 
 .search-wrapper {
@@ -713,9 +704,6 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .footer-phone-wrapper {
-  width: 340px;
-  min-height: 40px;
-  max-height: 80px;
   text-align: center;
 }
 
@@ -888,7 +876,7 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .auth-form-button {
-  height: 65px;
+  min-height: 65px;
   grid-column: 1/5;
   border-radius: 10px;
 }
@@ -919,7 +907,7 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .form-label-icon {
-  position: relative;
+  /*position: relative;*/
 }
 
 .auth-form-children__guests-wrapper {
@@ -971,18 +959,17 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .auth-field-plus:hover {
-  color: #000000;
   background-image: url("../images/icons/catalogpage-simbols/vector-plus.svg");
 }
 
 .auth-field-minus:hover {
   background-image: url("../images/icons/catalogpage-simbols/vector-minus.svg");
-
 }
 
-.auth-field-plus:focus,
-.auth-field-minus:focus {
-  outline-color: #82B3D3;
+.auth-field-plus:focus-visible,
+.auth-field-minus:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid #82B3D3;
 }
 
 .auth-field-plus:active,
@@ -993,29 +980,24 @@ li.infrastructure-item.infrastructure-item-color {
 /*  tooltip  */
 .tooltip-wrapper {
   display: flex;
+  align-items: center;
   margin-left: 10px;
 }
 
 .tooltip {
-  /*position: relative;*/
-  /*display: flex;*/
-  /*align-items: center;*/
-  position: absolute;
-  margin-top: 12px;
-  margin-left: 62px;
+  position: relative;
+  margin-left: 10px;
 }
 
 .tooltip-icon {
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
   border-radius: 50%;
   background-color: #83B3D3;
 }
 
 .tooltip-toggle {
-  display: block;
   padding: 0;
-  /*margin-left: 11px;*/
   border: none;
   background-image: url("../images/icons/catalogpage-simbols/tooltipinfo.svg");
   background-position: center;
@@ -1029,8 +1011,8 @@ li.infrastructure-item.infrastructure-item-color {
 .tooltip-text {
   position: absolute;
   min-width: 227px;
-  top: 42px;
-  left: -119px;
+  top: 44px;
+  left: -116px;
   background-color: #333333;
   color: #FFFFFF;
   text-transform: none;
@@ -1051,10 +1033,13 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .tooltip-text::after {
+  width: 19px;
+  height: 9px;
   position: absolute;
-  top: -16px;
-  right: 47%;
-  content: url(../images/icons/catalogpage-simbols/tooltiparrow.svg);
+  bottom: 100%;
+  right: 48%;
+  content: "";
+  background-image: url(../images/icons/catalogpage-simbols/tooltiparrow.svg);
 }
 
 /*  Убираем стрелки в input-ах  */
