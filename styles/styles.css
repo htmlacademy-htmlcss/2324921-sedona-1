@@ -68,9 +68,9 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   box-sizing: border-box;
-  margin-left: 22px;
+  margin-left: 25px;
   padding: 8px 20px;
-  min-width: 164px;
+  min-width: 160px;
   max-width: 260px;
   border-radius: 4px;
 }
@@ -147,7 +147,7 @@ body {
 
 .navigation-logo-link {
   position: relative;
-  margin-right: 27px;
+  margin-right: 29px;
   width: 140px;
   height: 64px;
   align-self: flex-start;
@@ -854,23 +854,26 @@ li.infrastructure-item.infrastructure-item-color {
   height: 15px;
   top: 16px;
   right: 25px;
-  opacity: 0.2;
+  opacity: 0.3;
   border: none;
   padding: 0;
   background-image: url("../images/icons/catalogpage-simbols/departure.svg");
+  background-color: transparent;
   cursor: pointer;
 }
 
 .auth-field-icon:hover {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
-.auth-field-icon:focus {
-  opacity: 0.2;
+.auth-field-icon:focus-visible {
+  border-radius: 3px;
+  outline: 3px solid #82B3D3;
 }
 
 .auth-field-icon:active {
-  opacity: 0.3;
+  background-color: #F2F2F2;
+  opacity: 0.2;
 }
 
 .auth-form-button {
@@ -895,8 +898,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 /*  label  */
 .form-label {
-  display: flex;
-  align-items: center;
+  margin-top: 12px;
   font-size: 21px;
   font-weight: 700;
   text-transform: capitalize;
@@ -971,7 +973,6 @@ li.infrastructure-item.infrastructure-item-color {
 /*  tooltip  */
 .tooltip-wrapper {
   display: flex;
-  align-items: center;
   margin-left: 10px;
 }
 
@@ -1004,7 +1005,7 @@ li.infrastructure-item.infrastructure-item-color {
 .tooltip-text {
   position: absolute;
   min-width: 227px;
-  top: 44px;
+  top: 54px;
   left: -116px;
   background-color: #333333;
   color: #FFFFFF;
@@ -1112,13 +1113,13 @@ input[type=number]::-webkit-outer-spin-button {
 .catalog-filter-wrapper {
   background-image: url("../images/catalog/filter-img.jpg");
   background-size: cover;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 70px 72px;
   color: #ffffff;
 }
 
 /*  Фильтр-сортировка гостиниц  */
 .catalog-services {
-  margin-top: 38px;
+  margin-top: 40px;
 }
 
 .catalog-filter {
@@ -1128,7 +1129,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .catalog-filter-service__container {
   display: flex;
-  width: 360px;
+  max-width: 360px;
+  gap: 70px;
   justify-content: space-between;
 }
 
@@ -1145,7 +1147,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .catalog-filter-title {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   padding: 0;
   font-size: 20px;
   font-style: normal;
@@ -1185,7 +1187,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 22px;
   padding-left: 36px;
   cursor: pointer;
 }
@@ -1240,14 +1242,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .range-wrapper-inputs {
   display: flex;
-  justify-content: center;
-  gap: 2px;
+  gap: 1px;
   margin-bottom: 45px;
 }
 
 .range-input-price__from {
   width: 80px;
-  padding: 13px 43px 12px 20px;
+  padding: 15px 43px 10px 20px;
   color: #000000;
   font-size: 18px;
   font-style: normal;
@@ -1261,7 +1262,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .range-input-price__to {
   width: 80px;
-  padding: 13px 43px 12px 20px;
+  padding: 15px 43px 10px 20px;
   color: #000000;
   font-size: 18px;
   font-style: normal;
@@ -1284,15 +1285,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
 }
 
-.range-input__from {
-  position: absolute;
-  opacity: 0.3;
-  color: #000000;
-  top: 12px;
-  right: 20px;
-  z-index: 1;
-}
-
+.range-input__from,
 .range-input__to {
   position: absolute;
   opacity: 0.3;
@@ -1300,10 +1293,13 @@ input[type=number]::-webkit-outer-spin-button {
   top: 12px;
   right: 20px;
   z-index: 1;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 /*   Полоса прокрутки */
-
 .range-scale {
   position: relative;
   width: 286px;
@@ -1377,7 +1373,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button-submit {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
@@ -1390,7 +1386,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  padding: 8px 25px;
+  padding: 6px 25px;
   width: 100%;
   border-radius: 4px;
   background-color: transparent;
@@ -1534,6 +1530,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  text-transform: capitalize;
 
 }
 
@@ -1629,15 +1626,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .hotel-stars-2 {
-  width: 39px;
+  width: 43px;
 }
 
 .hotel-stars-3 {
-  width: 62px;
+  width: 69px;
 }
 
 .hotel-stars-4 {
-  width: 90px;
+  width: 89px;
 }
 
 .hotel-stars-5 {
@@ -1654,8 +1651,8 @@ hr {
 /*  Пагинация  */
 
 .pagination {
-  display: grid;
-  grid-template-columns: repeat(6, 60px);
+  display: flex;
+  flex-wrap:wrap;
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -1667,13 +1664,13 @@ hr {
   justify-content: center;
   align-items: center;
   min-width: 24px;
-  min-height: 36px;
+  height: 36px;
   padding: 12px 18px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  color: #ffffff;
+  color: #FFFFFF;
   border-radius: 4px;
   background: #82B3D3;
   outline: none;
