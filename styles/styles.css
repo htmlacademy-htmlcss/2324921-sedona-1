@@ -834,7 +834,6 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .auth-field {
-  /*width: 390px;*/
   padding: 14px 48px 12px 20px;
   background-color: #F2F2F2;
   color: #000000;
@@ -843,7 +842,6 @@ li.infrastructure-item.infrastructure-item-color {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  /*opacity: 0.6;*/
   border-radius: 4px;
   border: none;
 }
@@ -883,8 +881,6 @@ li.infrastructure-item.infrastructure-item-color {
 
 /*  Сообщения об ошибке  */
 .message-error {
-  /*right: 180px;*/
-  /*top: 52px;*/
   color: #FF5757;
 }
 
@@ -908,11 +904,6 @@ li.infrastructure-item.infrastructure-item-color {
 
 .form-label-icon {
   /*position: relative;*/
-}
-
-.auth-form-children__guests-wrapper {
-  display: flex;
-  margin: 0;
 }
 
 .auth-guests-wrapper {
@@ -985,6 +976,8 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .tooltip {
+  display: flex;
+  align-items: center;
   position: relative;
   margin-left: 10px;
 }
@@ -1566,7 +1559,7 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 20px;
   background: #F2F2F2;
   margin: 0;
-  height: 37px;
+  min-height: 37px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
@@ -1673,8 +1666,9 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  min-width: 24px;
+  min-height: 36px;
+  padding: 12px 18px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
