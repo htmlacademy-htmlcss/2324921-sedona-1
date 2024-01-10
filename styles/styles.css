@@ -763,7 +763,7 @@ li.infrastructure-item.infrastructure-item-color {
 .modal {
   position: relative;
   margin: auto;
-  padding: 66px 70px;
+  padding: 67px 67px 66px 68px;
   border-radius: 30px;
   background: #FFFFFF;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.30);
@@ -775,8 +775,8 @@ li.infrastructure-item.infrastructure-item-color {
 
 .modal-close-button {
   position: absolute;
-  top: 65px;
-  right: 54px;
+  top: 66px;
+  right: 52px;
   width: 52px;
   height: 52px;
   border: none;
@@ -822,7 +822,7 @@ li.infrastructure-item.infrastructure-item-color {
 .auth-form {
   display: grid;
   grid-template-columns: 126px 178px 130px 116px;
-  gap: 28px 18px;
+  gap: 24px 18px;
 }
 
 .auth-field-wrapper {
@@ -876,7 +876,8 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .auth-form-button {
-  min-height: 65px;
+  margin-top: 28px;
+  min-height: 62px;
   grid-column: 1/5;
   border-radius: 10px;
 }
@@ -888,7 +889,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 .message {
   margin-left: 20px;
-  margin-top: 6px;
+  margin-top: 5px;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -1005,11 +1006,11 @@ li.infrastructure-item.infrastructure-item-color {
   position: absolute;
   min-width: 227px;
   top: 54px;
-  left: -116px;
+  left: -118px;
   background-color: #333333;
   color: #FFFFFF;
   text-transform: none;
-  padding: 22px 18px 22px 22px;
+  padding: 22px 17px 22px 22px;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -1030,7 +1031,7 @@ li.infrastructure-item.infrastructure-item-color {
   height: 9px;
   position: absolute;
   bottom: 100%;
-  right: 48%;
+  left: 122px;
   content: "";
   background-image: url(../images/icons/catalogpage-simbols/tooltiparrow.svg);
 }
@@ -1128,6 +1129,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .catalog-filter-service__container {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
   max-width: 360px;
   gap: 70px;
   justify-content: space-between;
@@ -1135,6 +1138,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .catalog-filter-price__container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 70px;
 }
@@ -1372,7 +1376,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button-submit {
-  margin-bottom: 34px;
+  margin-bottom: 17px;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
@@ -1382,6 +1386,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button-reset {
+  margin-top: 17px;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
