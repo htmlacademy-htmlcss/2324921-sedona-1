@@ -822,13 +822,12 @@ li.infrastructure-item.infrastructure-item-color {
 .auth-form {
   display: grid;
   grid-template-columns: 126px 178px 130px 116px;
-  gap: 48px 18px;
+  gap: 28px 18px;
 }
 
 .auth-field-wrapper {
   display: flex;
   flex-direction: column;
-  height: 52px;
   position: relative;
   grid-column: 2/5;
 }
