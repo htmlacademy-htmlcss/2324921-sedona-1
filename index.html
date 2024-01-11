@@ -90,7 +90,7 @@
           </li>
           <li class="advantages-dignities-item advantages-dignities-item-color">
             <h4 class="advantages-title advantages-title-dignities-current"> Красивая <br/>дорога</h4>
-            <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно
+            <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="advantages-dignities-item">
@@ -124,7 +124,7 @@
           </div>
         </section>
 
-        <!--Список для инфраструктуры-->
+        <!--Список инфраструктуры-->
         <ul class="infrastructure-services-list">
           <li class="infrastructure-item infrastructure-item-icon-housing">
             <h4 class="infrastructure-title ">Жильё</h4>
@@ -261,7 +261,7 @@
       <label class="form-label" for="auth-form__in">Дата заезда:
       </label>
       <div class="auth-field-wrapper">
-        <input class="auth-field" type="text" id="auth-form__in" name="select-date"
+        <input class="auth-field" type="text" id="auth-form__in" name="check-in-date"
                value="27 апреля 2020"
                placeholder="Укажите дату">
         <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
@@ -271,7 +271,7 @@
       <label class="form-label" for="auth-form__out">Дата выезда:
       </label>
       <div class="auth-field-wrapper">
-        <input class="auth-field" type="text" id="auth-form__out" name="select-date"
+        <input class="auth-field" type="text" id="auth-form__out" name="check-out-date"
                value="1 сентября 2023"
                placeholder="Укажите дату">
         <span class="message ">На эти даты есть свободные номера. Пока есть.</span>
@@ -283,28 +283,26 @@
       <div class="auth-guests-wrapper">
         <button class="auth-field-minus" type="button"></button>
         <input class="auth-field auth-field__guests" type="number" id="auth-form__adults" value="2"
-               name="quantity">
+               name="adults">
         <button class="auth-field-plus" type="button"></button>
       </div>
       <!--   Дети     -->
       <div class="tooltip-wrapper">
-<!--        <span class="form-label form-label-icon">-->
-          <label class="form-label" for="auth-form__children">Дети:
-          </label>
-          <!--    Тултип      -->
-          <span class="tooltip">
+        <label class="form-label" for="auth-form__children">Дети:
+        </label>
+        <!--    Тултип      -->
+        <span class="tooltip">
              <button class="tooltip-toggle tooltip-icon" type="button" aria-labelledby="tooltip-label-date">
              </button>
             <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
               Дети<br>до 6 лет размещаются бесплатно.
             </span>
           </span>
-<!--        </span>-->
       </div>
       <div class="auth-guests-wrapper">
         <button class="auth-field-minus" type="button"></button>
         <input class="auth-field auth-field__guests" type="number" id="auth-form__children" value="2"
-               name="quantity">
+               name="children">
         <button class="auth-field-plus" type="button"></button>
       </div>
       <!--    Кнопка    -->
