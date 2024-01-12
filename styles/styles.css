@@ -202,6 +202,7 @@ body {
 
 .navigation-link:focus {
   border: black;
+  outline-offset: -2px;
 }
 
 .navigation-link:active {
@@ -627,8 +628,8 @@ li.infrastructure-item.infrastructure-item-color {
   background: #E6E6E6;
 }
 
-.input-field:focus,
-.auth-field:focus,
+.input-field:focus-visible,
+.auth-field:focus-visible,
 .range-input-price__from:focus-visible,
 .range-input-price__to:focus-visible {
   outline: 3px solid #83B3D3;
@@ -1021,7 +1022,6 @@ li.infrastructure-item.infrastructure-item-color {
   opacity: 0.8;
 }
 
-
 .tooltip-text {
   position: absolute;
   min-width: 224px;
@@ -1135,7 +1135,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .catalog-filter-wrapper {
   background-image: url("../images/catalog/filter-img.jpg");
   background-size: cover;
-  padding: 35px 70px 70px 72px;
+  padding: 35px 70px 72px 71px;
   color: #fff;
   background-color: #000;
 }
@@ -1375,7 +1375,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .select-control {
   width: 291px;
   font-family: inherit;
-  padding: 12px 40px 14px 18px;
+  padding: 13px 40px 14px 18px;
   color: #333;
   font-size: 18px;
   line-height: 21px;
@@ -1447,12 +1447,12 @@ input[type="number"]::-webkit-outer-spin-button {
 /*  Каталог отелей  */
 
 .catalog-hotels {
-  padding: 50px 70px 60px;
+  padding: 48px 67px 62px 70px;
 }
 
 .sorting-wrapper {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
   align-items: center
 }
 
@@ -1507,12 +1507,23 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .hotel-card-link {
+  display: block;
   text-decoration: none;
+
 }
 
 .hotel-card-img-link {
   display: block;
   margin-bottom: 16px;
+}
+
+.hotel-card-title {
+  color: #000;
+  margin: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 /*   Состояние ссылки карточки  */
@@ -1522,6 +1533,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .hotel-card-link:focus {
   opacity: 0.7;
+  outline: 2px solid black ;
 }
 
 .hotel-card-link:active {
@@ -1534,14 +1546,6 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 20px;
 }
 
-.hotel-card-title {
-  color: #000;
-  margin: 0;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-}
 
 .hotel-card-description {
   margin: 0;
@@ -1558,7 +1562,6 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 21px;
   color: #333;
   text-transform: capitalize;
-
 }
 
 .hotel-card-content {
@@ -1568,7 +1571,6 @@ input[type="number"]::-webkit-outer-spin-button {
   align-items: center;
   margin-top: 16px;
 }
-
 
 .hotel-rating {
   display: flex;
@@ -1617,8 +1619,8 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 20px;
   color: #FFF;
   box-sizing: border-box;
-  padding: 8px 20px;
-  min-width: 140px;
+  padding: 8px 15px;
+  min-width: 142px;
   max-width: 240px;
   border-radius: 4px;
   background-color: #7DB54F;
