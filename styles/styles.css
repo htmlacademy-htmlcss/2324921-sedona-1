@@ -1068,7 +1068,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* radio */
-
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -1577,33 +1576,6 @@ input:disabled {
   opacity: 0.3;
 }
 
-/*.input-field:hover,*/
-/*.auth-field:hover,*/
-/*.range-input-price__from:hover,*/
-/*.range-input-price__to:hover {*/
-/*  background: #E6E6E6;*/
-/*}*/
-
-/*.input-field:focus-visible,*/
-/*.auth-field:focus-visible,*/
-/*.range-input-price__from:focus-visible,*/
-/*.range-input-price__to:focus-visible {*/
-/*  outline: 3px solid #83B3D3;*/
-/*}*/
-
-/*.input-field:active,*/
-/*.auth-field:active,*/
-/*.range-input-price__from:active,*/
-/*.range-input-price__to:active {*/
-/*  !* border: 3px solid #000000; *!*/
-/*  outline: 2px solid #000;*/
-/*}*/
-
-/*.input-field:disabled,*/
-/*.auth-field:disabled {*/
-/*  color: #E5E5E5;*/
-/*}*/
-
 /*  range-input  */
 .range-input-price__from:disabled,
 .range-input-price__to:disabled {
@@ -1665,10 +1637,10 @@ input:disabled {
   opacity: 0.2;
 }
 
-.auth-field-icon:disabled {
+.auth-field:disabled ~ button {
   pointer-events: none;
   cursor: default;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 /*  auth-field (plus-minus)  */
@@ -1707,6 +1679,12 @@ input:disabled {
   display: block;
 }
 
+.tooltip-toggle:disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.3;
+}
+
 /*  control  */
 .control:hover {
   opacity: 0.6;
@@ -1716,18 +1694,18 @@ input:disabled {
   opacity: 0.3;
 }
 
-.control-input:disabled + .control-mark {
-  pointer-events: none;
-  cursor: default;
-  opacity: 0.2;
-}
-
 .control-input:focus-visible + .control-mark {
   outline: 3px solid #83B3D3;
 }
 
 .control-input:active + .control-mark {
   outline: 2px solid #83B3D3;
+}
+
+.control-input:disabled ~ span {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.2;
 }
 
 /*  range  */
@@ -1804,7 +1782,7 @@ input:disabled {
 
 .pagination-link[href]:active {
   background: #82B3D3;
-  color: rgb(255 255 255 / 30%);
+  color: #FFFFFF4C;
 }
 
 .pagination-current:hover,
@@ -1817,4 +1795,10 @@ input:disabled {
 .pagination-link-ellipsis:active,
 .pagination-link-ellipsis:focus {
   background-color: #fff;
+}
+
+.pagination-link:disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #FFFFFF4C;
 }
