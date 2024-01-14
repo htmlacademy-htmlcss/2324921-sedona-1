@@ -507,7 +507,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 .subscription-catalog {
   background: #FFF;
-  padding: 97px 258px 100px;
+  padding: 95px 258px 102px 258px;
 }
 
 .subscription-wrapper {
@@ -560,7 +560,8 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .input-field {
-  font-size: 17px;
+  font-family: inherit;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -1663,8 +1664,8 @@ input:disabled {
   opacity: 0.3;
 }
 
-.auth-field-plus:disabled,
-.auth-field-minus:disabled {
+.auth-field-minus:disabled,
+.auth-field__guests:disabled + button {
   pointer-events: none;
   cursor: default;
   opacity: 0.3;
