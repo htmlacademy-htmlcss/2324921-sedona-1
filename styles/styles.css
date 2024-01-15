@@ -1694,7 +1694,6 @@ input:disabled {
   opacity: 0.3;
 }
 
-
 .control-input:focus-visible + .control-mark {
   outline: 3px solid #83B3D3;
 }
