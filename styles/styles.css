@@ -257,12 +257,10 @@ body {
 
 /* Преимущества */
 .advantages-container {
-  padding-top: 70px;
-  padding-bottom: 90px;
+  padding: 70px 100px 90px;
 }
 
 .advantages-intro-wrapper {
-  width: 651px;
   margin: 0 auto;
   text-align: center;
 }
@@ -393,11 +391,10 @@ body {
 
 /* Инфраструктура */
 .infrastructure-container {
-  padding: 66px 0;
+  padding: 66px 100px 66px;
 }
 
 .infrastructure-intro-wrapper {
-  width: 505px;
   margin: 0 auto;
   text-align: center;
 }
@@ -424,6 +421,7 @@ li.infrastructure-item.infrastructure-item-color {
 /*  Инфраструктура  */
 .infrastructure-services-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -471,11 +469,10 @@ li.infrastructure-item.infrastructure-item-color {
 
 /* Поиск гостиниц */
 .search {
-  padding: 96px 304px;
+  padding: 96px 100px 96px;
 }
 
 .search-wrapper {
-  width: 592px;
   margin: 0 auto;
   text-align: center;
 }
@@ -502,7 +499,7 @@ li.infrastructure-item.infrastructure-item-color {
   background-color: #43617d;
   background-image: url("../images/main-page/subscribe.jpg");
   background-size: cover;
-  padding: 96px 258px 102px;
+  padding: 96px 100px 102px;
 }
 
 .subscription-catalog {
@@ -511,9 +508,10 @@ li.infrastructure-item.infrastructure-item-color {
 }
 
 .subscription-wrapper {
-  width: 684px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
-  text-align: center;
 }
 
 .subscription-title {
@@ -557,6 +555,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 .newsletter-form-wrapper {
   display: flex;
+  width: 684px;
 }
 
 .input-field {
@@ -1695,6 +1694,7 @@ input:disabled {
   opacity: 0.3;
 }
 
+
 .control-input:focus-visible + .control-mark {
   outline: 3px solid #83B3D3;
 }
@@ -1723,7 +1723,6 @@ input:disabled {
   pointer-events: none;
   cursor: default;
 }
-
 
 /*   hotel-card-link  */
 .hotel-card-link:hover {
