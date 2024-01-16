@@ -292,6 +292,10 @@ body {
   padding: 0;
 }
 
+.advantages-dignities-item:nth-child(even) {
+  background-color: #83B3D333;
+}
+
 .advantages-list-reverse {
   flex-direction: row-reverse;
 }
@@ -418,7 +422,6 @@ li.infrastructure-item.infrastructure-item-color {
   background-color: #FFF;
 }
 
-/*  Инфраструктура  */
 .infrastructure-services-list {
   display: flex;
   flex-wrap: wrap;
@@ -433,6 +436,10 @@ li.infrastructure-item.infrastructure-item-color {
   padding: 151px 85px 80px;
   background-color: rgb(131 179 211 / 12%);
   color: #000;
+}
+
+.infrastructure-item:nth-child(even) {
+  background-color: #FFFFFFFF;
 }
 
 /* Иконки инфраструктуры */
@@ -581,9 +588,7 @@ li.infrastructure-item.infrastructure-item-color {
 
 .page-footer-container {
   display: grid;
-  grid-template-columns: 150px auto 115px;
-
-  /* padding: 37px 72px 30px 70px; */
+  grid-template-columns: 150px 720px 115px;
   padding: 47px 72px 30px 70px;
   justify-content: space-between;
   align-items: center;
@@ -1710,12 +1715,16 @@ input:disabled {
 
 /*  range  */
 .range-toggle:hover {
-  background-color: #fff;
+  background-color: #C5CDD6FF;
 }
 
-.range-toggle:active,
 .range-toggle:focus {
   outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+
 }
 
 .range-toggle:disabled {
